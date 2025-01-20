@@ -4,17 +4,27 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Seller extends User {
-		private final Set<Buyer> followers = new HashSet<>();
+    private Set<Buyer> followers = new HashSet<>();
 
-		public Seller(Long id, String name) {
-				super(id, name);
-		}
+    public Seller() {
 
-		public Set<Buyer> getFollowers() {
-				return followers;
-		}
+    }
 
-		public void addFollower(Buyer buyer) {
-				this.followers.add(buyer);
-		}
+    public Seller(Long id, String name, Set<Buyer> followers) {
+        super(id, name);
+        this.followers = followers;
+    }
+
+    public Seller(Long id, String name) {
+        super(id, name);
+    }
+
+    public Set<Buyer> getFollowers() {
+        return followers;
+    }
+
+    public void addFollower(Buyer buyer) {
+        this.followers.add(buyer);
+    }
+
 }
