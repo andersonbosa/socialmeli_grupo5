@@ -7,8 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class InMemoryBuyerRepository {
-		private List<Buyer> buyers = new ArrayList<>();
+public class InMemoryBuyerRepository implements BuyerRepository {
+		public List<Buyer> buyers = new ArrayList<>();
 
 		public InMemoryBuyerRepository() {}
+
+		@Override
+		public Buyer findById(Long id) {
+				return null;
+		}
+
+		@Override
+		public void update(Buyer buyer) {
+
+		}
 }
