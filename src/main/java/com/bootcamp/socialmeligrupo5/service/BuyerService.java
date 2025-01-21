@@ -34,9 +34,6 @@ public class BuyerService {
 
         buyer.follow(seller);
         seller.addFollower(buyer);
-
-        System.out.println("Seller - " + seller);
-        System.out.println("Buyer" + buyer);
     }
 
     public BuyerFollowingResponseDTO buyerFollowing(Long userId) {
