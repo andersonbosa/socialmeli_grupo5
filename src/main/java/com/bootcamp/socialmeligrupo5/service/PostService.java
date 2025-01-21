@@ -4,6 +4,7 @@ import com.bootcamp.socialmeligrupo5.dto.PostDto;
 import com.bootcamp.socialmeligrupo5.dto.ProductDto;
 import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Product;
+import com.bootcamp.socialmeligrupo5.exception.BadRequestException;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.PostRepository;
 import org.springframework.stereotype.Service;
@@ -25,7 +26,7 @@ public class PostService {
     public void registerNewPost(PostDto postDto) {
         Post post = convertPostDtoToPost(postDto);
         if (post.getId() == null || post.getCategory() == null || post.getPrice() == null || post.getSellerId() == null || post.getDate() == null || post.getProduct() == null) {
-            throw new NotFoundException("A publicação possui atributos incorretos.");
+            throw new BadRequestException("A publicação possui atributos incorretos.");
         }
 
         if (sellerService.findSeller(post.getSellerId()) == null) {
