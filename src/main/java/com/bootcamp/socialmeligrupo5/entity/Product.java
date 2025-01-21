@@ -8,6 +8,8 @@ public class Product {
 		private String notes;
 		private String type;
 
+		public Product () {}
+
 		public Product(String brand, String color, Long id, String name, String notes) {
 				this.brand = brand;
 				this.color = color;
