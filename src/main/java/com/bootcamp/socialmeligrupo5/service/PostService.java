@@ -25,10 +25,7 @@ public class PostService {
 
     public void registerNewPost(PostDTO postDto) {
         Post post = convertPostDtoToPost(postDto);
-
-        if (sellerService.findSeller(post.getSellerId()) == null) {
-            throw new NotFoundException("Não existe um vendedor com o identificador fornecido.");
-        }
+        sellerService.findSeller(post.getSellerId());
         this.postRepository.create(post);
     }
 
