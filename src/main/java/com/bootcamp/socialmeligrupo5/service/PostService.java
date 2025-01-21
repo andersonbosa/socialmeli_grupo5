@@ -1,7 +1,7 @@
 package com.bootcamp.socialmeligrupo5.service;
 
-import com.bootcamp.socialmeligrupo5.dto.PostDto;
-import com.bootcamp.socialmeligrupo5.dto.ProductDto;
+import com.bootcamp.socialmeligrupo5.dto.PostDTO;
+import com.bootcamp.socialmeligrupo5.dto.ProductDTO;
 import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Product;
 import com.bootcamp.socialmeligrupo5.exception.BadRequestException;
@@ -23,11 +23,8 @@ public class PostService {
         this.sellerService = sellerService;
     }
 
-    public void registerNewPost(PostDto postDto) {
+    public void registerNewPost(PostDTO postDto) {
         Post post = convertPostDtoToPost(postDto);
-        if (post.getId() == null || post.getCategory() == null || post.getPrice() == null || post.getSellerId() == null || post.getDate() == null || post.getProduct() == null) {
-            throw new BadRequestException("A publicação possui atributos incorretos.");
-        }
 
         if (sellerService.findSeller(post.getSellerId()) == null) {
             throw new NotFoundException("Não existe um vendedor com o identificador fornecido.");
@@ -35,7 +32,7 @@ public class PostService {
         this.postRepository.create(post);
     }
 
-    private Post convertPostDtoToPost(PostDto p) {
+    private Post convertPostDtoToPost(PostDTO p) {
         Product product = convertProductDtoToProduct(p.product());
         return new Post(
                 (long) postRepository.findAll().size(),
@@ -48,7 +45,7 @@ public class PostService {
 
     }
 
-    private Product convertProductDtoToProduct(ProductDto prodDto) {
+    private Product convertProductDtoToProduct(ProductDTO prodDto) {
         return new Product(
                 prodDto.brand(),
                 prodDto.color(),
