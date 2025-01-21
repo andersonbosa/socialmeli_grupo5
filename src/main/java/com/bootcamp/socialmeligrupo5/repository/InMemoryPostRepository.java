@@ -14,16 +14,23 @@ import java.util.List;
 
 @Repository
 public class InMemoryPostRepository implements PostRepository {
-		public List<Post> posts = new ArrayList<>();
+    public List<Post> posts = new ArrayList<>();
 
     public InMemoryPostRepository() {
         loadDatabase();
     }
 
-		@Override
-		public void create(Post post) {
-				posts.add(post);
-		}
+    @Override
+    public void create(Post post) {
+        posts.add(post);
+    }
+
+    @Override
+    public List<Post> findBySellerId(Long sellerId) {
+        return posts.stream()
+                .filter(post -> post.getSellerId().equals(sellerId))
+                .toList();
+    }
 
     private void loadDatabase() {
         try {
