@@ -6,7 +6,6 @@ import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Product;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.PostRepository;
-import com.bootcamp.socialmeligrupo5.repository.SellerRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -16,12 +15,12 @@ import java.time.format.DateTimeFormatter;
 public class PostService {
 
     private final PostRepository postRepository;
-    private final SellerRepository sellerRepository;
+    private final SellerService sellerService;
     private Long id = 1L;
 
-    public PostService(PostRepository postRepository, SellerRepository sellerRepository) {
+    public PostService(PostRepository postRepository, SellerService sellerService) {
         this.postRepository = postRepository;
-        this.sellerRepository = sellerRepository;
+        this.sellerService = sellerService;
     }
 
     public void registerNewPost(PostDto postDto) {
@@ -30,17 +29,16 @@ public class PostService {
             throw new NotFoundException("A publicação possui atributos incorretos.");
         }
 
-        if (sellerRepository.findById(post.getSellerId()) == null) {
+        if (sellerService.findSeller(post.getSellerId()) == null) {
             throw new NotFoundException("Não existe um vendedor com o identificador fornecido.");
         }
         this.postRepository.create(post);
-        System.out.println(post);
     }
 
     private Post convertPostDtoToPost(PostDto p) {
         Product product = convertProductDtoToProduct(p.product());
         return new Post(
-                id++,
+                (long) postRepository.findAll().size(),
                 LocalDate.parse(p.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
                 p.category(),
                 p.user_id(),
@@ -57,28 +55,6 @@ public class PostService {
                 prodDto.product_id(),
                 prodDto.product_name(),
                 prodDto.notes()
-        );
-    }
-
-    private PostDto convertPostToPostDto(Post post) {
-        ProductDto productDto = convertProductToProductDto(post.getProduct());
-        return new PostDto(
-                post.getSellerId(),
-                post.getDate().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")),
-                productDto,
-                post.getCategory(),
-                post.getPrice()
-        );
-    }
-
-    private ProductDto convertProductToProductDto(Product product) {
-        return new ProductDto(
-                product.getId(),
-                product.getName(),
-                product.getType(),
-                product.getBrand(),
-                product.getColor(),
-                product.getNotes()
         );
     }
 }
