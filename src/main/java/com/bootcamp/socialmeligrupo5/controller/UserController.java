@@ -1,11 +1,9 @@
 package com.bootcamp.socialmeligrupo5.controller;
 
 import com.bootcamp.socialmeligrupo5.service.BuyerService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
@@ -24,6 +22,13 @@ public class UserController {
   ) {
     buyerService.followSeller(userId, userIdToFollow);
     return ResponseEntity.ok().build();
+  }
+
+  @GetMapping("/{userId}/followed/list")
+  public ResponseEntity<?> sellersFollowedByUser(
+          @PathVariable Long userId
+  ) {
+    return new ResponseEntity<>(buyerService.sellersFollowedByUser(userId), HttpStatus.OK);
   }
 
 
