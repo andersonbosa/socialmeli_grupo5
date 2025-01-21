@@ -16,7 +16,6 @@ public class PostService {
 
     private final PostRepository postRepository;
     private final SellerService sellerService;
-    private Long id = 1L;
 
     public PostService(PostRepository postRepository, SellerService sellerService) {
         this.postRepository = postRepository;
