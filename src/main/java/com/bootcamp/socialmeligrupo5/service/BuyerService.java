@@ -1,5 +1,7 @@
 package com.bootcamp.socialmeligrupo5.service;
 
+import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
+import com.bootcamp.socialmeligrupo5.dto.UserResponseDTO;
 import com.bootcamp.socialmeligrupo5.entity.Buyer;
 import com.bootcamp.socialmeligrupo5.entity.Seller;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
@@ -7,7 +9,7 @@ import com.bootcamp.socialmeligrupo5.repository.BuyerRepository;
 import com.bootcamp.socialmeligrupo5.repository.SellerRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
 
 @Service
 public class BuyerService {
@@ -37,13 +39,12 @@ public class BuyerService {
         System.out.println("Buyer" + buyer);
     }
 
-    public Buyer sellersFollowedByUser(Long userId) {
-//        Set<Seller> setSeller = buyerRepository.getFollowingById(userId);
+    public BuyerFollowingResponseDTO buyerFollowing(Long userId) {
         Buyer buyer = buyerRepository.findById(userId);
 
-        System.out.println("buyer: " + buyer.getFollowing());
+        List<UserResponseDTO> following = buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName())).toList();
 
-        return buyer;
+        return new BuyerFollowingResponseDTO(buyer.getId(), buyer.getName(), following);
     }
 
 }
