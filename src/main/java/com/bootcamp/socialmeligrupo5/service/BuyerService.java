@@ -1,11 +1,15 @@
 package com.bootcamp.socialmeligrupo5.service;
 
+import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
+import com.bootcamp.socialmeligrupo5.dto.UserResponseDTO;
 import com.bootcamp.socialmeligrupo5.entity.Buyer;
 import com.bootcamp.socialmeligrupo5.entity.Seller;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.BuyerRepository;
 import com.bootcamp.socialmeligrupo5.repository.SellerRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class BuyerService {
@@ -30,9 +34,14 @@ public class BuyerService {
 
         buyer.follow(seller);
         seller.addFollower(buyer);
+    }
 
-        System.out.println("Seller - " + seller);
-        System.out.println("Buyer" + buyer);
+    public BuyerFollowingResponseDTO buyerFollowing(Long userId) {
+        Buyer buyer = buyerRepository.findById(userId);
+
+        List<UserResponseDTO> following = buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName())).toList();
+
+        return new BuyerFollowingResponseDTO(buyer.getId(), buyer.getName(), following);
     }
 
 }
