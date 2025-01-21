@@ -12,20 +12,24 @@ import java.util.Set;
 @Service
 public class SellerService {
 
-  private final SellerRepository sellerRepository;
+    private final SellerRepository sellerRepository;
 
-  public SellerService(SellerRepository sellerRepository) {
-    this.sellerRepository = sellerRepository;
-  }
-
-  public FollowersCountResponseDTO followersCount(Long userId){
-    Seller seller = sellerRepository.findById(userId);
-    if (seller == null) {
-      throw new NotFoundException("O vendedor enviado não foi localizado!");
+    public SellerService(SellerRepository sellerRepository) {
+        this.sellerRepository = sellerRepository;
     }
-    Set<Buyer> sellerFollowers = seller.getFollowers();
-    return new FollowersCountResponseDTO(seller.getId(), seller.getName(), sellerFollowers.size());
-  }
 
+    private Seller findSeller(Long userId) {
+        Seller seller = sellerRepository.findById(userId);
+        if (seller == null) {
+            throw new NotFoundException("O vendedor enviado não foi localizado!");
+        }
+        return seller;
+    }
+
+    public FollowersCountResponseDTO followersCount(Long userId) {
+        Seller seller = findSeller(userId);
+        Set<Buyer> sellerFollowers = seller.getFollowers();
+        return new FollowersCountResponseDTO(seller.getId(), seller.getName(), sellerFollowers.size());
+    }
 
 }

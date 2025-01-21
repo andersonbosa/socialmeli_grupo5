@@ -14,27 +14,27 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/users")
 public class UserController {
 
-  private final BuyerService buyerService;
-  private final SellerService sellerService;
+    private final BuyerService buyerService;
+    private final SellerService sellerService;
 
-  public UserController(BuyerService buyerService, SellerService sellerService) {
-    this.buyerService = buyerService;
-    this.sellerService = sellerService;
-  }
+    public UserController(BuyerService buyerService, SellerService sellerService) {
+        this.buyerService = buyerService;
+        this.sellerService = sellerService;
+    }
 
-  @PostMapping("/{userId}/follow/{userIdToFollow}")
-  public ResponseEntity<?> followSeller(
-      @PathVariable Long userId,
-      @PathVariable Long userIdToFollow
-  ) {
-    buyerService.followSeller(userId, userIdToFollow);
-    return ResponseEntity.ok().build();
-  }
+    @PostMapping("/{userId}/follow/{userIdToFollow}")
+    public ResponseEntity<?> followSeller(
+            @PathVariable Long userId,
+            @PathVariable Long userIdToFollow
+    ) {
+        buyerService.followSeller(userId, userIdToFollow);
+        return ResponseEntity.ok().build();
+    }
 
-  @GetMapping("/{userId}/followers/count")
-  public ResponseEntity<FollowersCountResponseDTO> followersCount(
-          @PathVariable @NotNull @Positive Long userId
-  ) {
-    return ResponseEntity.ok().body(sellerService.followersCount(userId));
-  }
+    @GetMapping("/{userId}/followers/count")
+    public ResponseEntity<FollowersCountResponseDTO> followersCount(
+            @PathVariable @NotNull @Positive Long userId
+    ) {
+        return ResponseEntity.ok().body(sellerService.followersCount(userId));
+    }
 }
