@@ -63,7 +63,7 @@ public class SellerService {
             orderedFollowers = orderedFollowers.stream()
                     .sorted(Comparator.comparing(UserResponseDTO::userName).reversed()).toList();
         } else {
-            throw new BadRequestException("A ordenção informada não é permitida!");
+            throw new BadRequestException("O tipo da ordenção informada não é permitida!");
         }
 
         return new SellerFollowersResponseDTO(seller.getId(), seller.getName(), orderedFollowers);
