@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class HandlerException {
 
-  @ExceptionHandler(NotFoundException.class)
-  public ResponseEntity<ExceptionDTO> notFound(NotFoundException ex) {
-    ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
-    return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exceptionDTO);
-  }
+    @ExceptionHandler(NotFoundException.class)
+    public ResponseEntity<ExceptionDTO> notFound(NotFoundException ex) {
+        ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exceptionDTO);
+    }
 
-  @ExceptionHandler(BadRequestException.class)
-  public ResponseEntity<ExceptionDTO> notFound(BadRequestException ex) {
-    ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
-    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionDTO);
-  }
+    @ExceptionHandler({BadRequestException.class, Exception.class})
+    public ResponseEntity<ExceptionDTO> badRequest(Exception ex) {
+        ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionDTO);
+    }
 
 }
