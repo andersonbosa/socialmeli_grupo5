@@ -19,7 +19,7 @@ public class ProductsController {
     }
 
     @GetMapping("/promo-post/count")
-    public ResponseEntity<?> getPromoPostCount(@RequestParam(name = "user_id") Long userId) {
+    public ResponseEntity<PromoProductsCountResponseDTO> getPromoPostCount(@RequestParam(name = "user_id") Long userId) {
         PromoProductsCountResponseDTO dto = this.sellerService.countSellerPromoProducts(userId);
         return ResponseEntity.ok(dto);
     }
