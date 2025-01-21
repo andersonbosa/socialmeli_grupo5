@@ -40,11 +40,11 @@ public class PostService {
     private Post convertPostDtoToPost(PostDto p) {
         Product product = convertProductDtoToProduct(p.product());
         return new Post(
-                p.category(),
-                LocalDate.parse(p.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
                 id++,
-                product,
+                LocalDate.parse(p.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
+                p.category(),
                 p.user_id(),
+                product,
                 p.price()
         );
 
