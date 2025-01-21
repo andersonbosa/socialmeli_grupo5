@@ -15,7 +15,13 @@ public class HandlerException {
   }
 
   @ExceptionHandler(BadRequestException.class)
-  public ResponseEntity<ExceptionDTO> notFound(BadRequestException ex) {
+  public ResponseEntity<ExceptionDTO> badRequest(BadRequestException ex) {
+    ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
+    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionDTO);
+  }
+
+  @ExceptionHandler(Exception.class)
+  public ResponseEntity<ExceptionDTO> genericException(Exception ex) {
     ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
     return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionDTO);
   }
