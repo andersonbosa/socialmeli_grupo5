@@ -1,6 +1,7 @@
 package com.bootcamp.socialmeligrupo5.controller;
 
 import com.bootcamp.socialmeligrupo5.dto.FollowersCountResponseDTO;
+import com.bootcamp.socialmeligrupo5.dto.SellerFollowersResponseDTO;
 import com.bootcamp.socialmeligrupo5.service.BuyerService;
 import com.bootcamp.socialmeligrupo5.service.SellerService;
 import jakarta.validation.constraints.NotNull;
@@ -36,5 +37,12 @@ public class UserController {
             @PathVariable @NotNull @Positive Long userId
     ) {
         return ResponseEntity.ok().body(sellerService.followersCount(userId));
+    }
+
+    @GetMapping("/{userId}/followers/list")
+    public ResponseEntity<SellerFollowersResponseDTO> listSellerFollowers(
+        @PathVariable @NotNull @Positive Long userId
+    ) {
+        return ResponseEntity.ok().body(sellerService.listSellerFollowers(userId));
     }
 }
