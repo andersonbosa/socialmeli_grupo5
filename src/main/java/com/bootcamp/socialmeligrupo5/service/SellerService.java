@@ -48,7 +48,7 @@ public class SellerService {
     public SellerFollowersResponseDTO listFollowersWithOrder(Long userId, String order) {
 
         if (order.isBlank()) {
-            throw new BadRequestException("Necessário informar a ordenção desejada!");
+            throw new BadRequestException("Necessário informar o tipo de ordenação desejada!");
         }
 
         Seller seller = findSeller(userId);
