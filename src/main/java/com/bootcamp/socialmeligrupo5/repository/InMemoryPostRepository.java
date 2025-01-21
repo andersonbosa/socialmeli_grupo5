@@ -7,23 +7,33 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ResourceUtils;
 
+import java.time.LocalDate;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Repository
 public class InMemoryPostRepository implements PostRepository {
-    public List<Post> posts = new ArrayList<>();
+		public List<Post> posts = new ArrayList<>();
 
-    public InMemoryPostRepository() {
-        loadDatabase();
-    }
+		public InMemoryPostRepository() {
+				loadDatabase();
+		}
 
-    @Override
-    public void create(Post post) {
-        posts.add(post);
-    }
+		@Override
+		public void create(Post post) {
+				posts.add(post);
+		}
+
+		@Override
+		public List<Post> findBySellerIdBetweenDates(Long sellerId, LocalDate start, LocalDate end) {
+				List<Post> sellerPosts = findBySellerId(sellerId);
+				return sellerPosts.stream().filter(
+						post -> !post.getDate().isBefore(start) && !post.getDate().isAfter(end)
+				).sorted(Comparator.comparing(Post::getDate)).toList();
+		}
 
     @Override
     public List<Post> findBySellerId(Long sellerId) {
