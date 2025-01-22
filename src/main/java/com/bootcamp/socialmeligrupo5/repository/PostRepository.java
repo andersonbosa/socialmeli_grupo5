@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface PostRepository {
 		void create(Post post);
-		List<Post> findBySellerIdBetweenDates(Long sellerId, LocalDate start, LocalDate end);
+		List<Post> findBySellerIdBetweenDates(List<Long> sellerIds, LocalDate start, LocalDate end);
     List<Post> findBySellerId(Long sellerId);
     List<Post> findAll();
 }

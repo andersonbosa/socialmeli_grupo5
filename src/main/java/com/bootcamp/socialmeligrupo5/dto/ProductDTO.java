@@ -4,10 +4,10 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Positive;
 
 public record ProductDTO(
-        @Positive(message = "product_id deve ser um número positivo")
-        Long product_id,
-        @NotEmpty(message = "product_name não deve ser vazio")
-        String product_name,
+        @Positive(message = "productId deve ser um número positivo")
+        Long productId,
+        @NotEmpty(message = "productName não deve ser vazio")
+        String productName,
         @NotEmpty(message = "type não deve ser vazio")
         String type,
         @NotEmpty(message = "brand não deve ser vazio")
