@@ -36,16 +36,16 @@ public class PostService {
         this.postRepository.create(post);
     }
 
-    public List<PostDTO> findFollowedSellersLastTwoWeeksPosts(Long userId) {
+    public SellerPostsResponseDTO findFollowedSellersLastTwoWeeksPosts(Long userId) {
         LocalDate twoWeeksAgo = LocalDate.now().minusWeeks(2);
         LocalDate today = LocalDate.now();
 
         BuyerFollowingResponseDTO buyerFollowing = buyerService.buyerFollowing(userId, null);
         List<Long> sellerIds = buyerFollowing.following().stream().map(UserResponseDTO::userId).toList();
 
-        List<Post> posts = postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today);
+        List<PostDTO> posts = postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today).stream().map(this::convertPostToPostDto).toList();
 
-        return posts.stream().map(this::convertPostToPostDto).toList();
+        return new SellerPostsResponseDTO(userId, posts);
     }
 
     public PromoProductsCountResponseDTO countSellerPromoProducts(Long sellerId) {
