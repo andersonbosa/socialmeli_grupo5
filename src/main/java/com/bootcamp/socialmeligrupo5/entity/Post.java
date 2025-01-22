@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.time.LocalDate;
 
-
 public class Post {
     private Long id;
     @JsonFormat(pattern = "dd-MM-yyyy", locale = "pt-BR")
@@ -31,7 +30,16 @@ public class Post {
         this.hasPromo = hasPromo;
     }
 
-    public Integer getCategory() {
+	public Post(Long id, LocalDate date, Integer category, Long sellerId, Product product, Double price) {
+		this.id = id;
+		this.date = date;
+		this.category = category;
+		this.sellerId = sellerId;
+		this.product = product;
+		this.price = price;
+	}
+
+	public Integer getCategory() {
         return category;
     }
 

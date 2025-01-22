@@ -56,7 +56,7 @@ public class SellerService {
         return new PromoProductsCountResponseDTO(sellerId, seller.getName(), promoProductsCount);
     }
 
-    private Seller findSeller(Long userId) {
+    public Seller findSeller(Long userId) {
         Seller seller = sellerRepository.findById(userId);
         if (seller == null) {
             throw new NotFoundException("O vendedor enviado não foi localizado!");
