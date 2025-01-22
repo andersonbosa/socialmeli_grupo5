@@ -1,502 +1,252 @@
 [
   {
     "id": 1,
-    "name": "Ana Clara Ribeiro",
+    "name": "Luna Solar",
     "following": []
   },
   {
     "id": 2,
-    "name": "Felipe Silva Fernandes",
+    "name": "Atlas Orion",
     "following": []
   },
   {
     "id": 3,
-    "name": "Maria Fernanda Costa",
+    "name": "Nova Celestine",
     "following": []
   },
   {
     "id": 4,
-    "name": "Gabriel Souza Lima",
+    "name": "Sirius Vega",
     "following": []
   },
   {
     "id": 5,
-    "name": "Juliana Oliveira Santos",
+    "name": "Aurora Skylark",
     "following": []
   },
   {
     "id": 6,
-    "name": "Lucas Pereira Almeida",
+    "name": "Cosmo Nebula",
     "following": []
   },
   {
     "id": 7,
-    "name": "Isabela Costa Furtado",
+    "name": "Lyra Starlight",
     "following": []
   },
   {
     "id": 8,
-    "name": "Vinicius Almeida Cruz",
+    "name": "Zephyr Horizon",
     "following": []
   },
   {
     "id": 9,
-    "name": "Camila Santos",
+    "name": "Vesper Dawn",
     "following": []
   },
   {
     "id": 10,
-    "name": "Rafael Lima Vasconcelos",
+    "name": "Orion North",
     "following": []
   },
   {
     "id": 11,
-    "name": "Larissa Rocha Cardoso",
+    "name": "Selene Moonbeam",
     "following": []
   },
   {
     "id": 12,
-    "name": "Gustavo Cardoso",
+    "name": "Aether Solstice",
     "following": []
   },
   {
     "id": 13,
-    "name": "Renata Nascimento Dias",
+    "name": "Cassiopeia Twilight",
     "following": []
   },
   {
     "id": 14,
-    "name": "Daniel Lopes Barros",
+    "name": "Eclipse Shadow",
     "following": []
   },
   {
     "id": 15,
-    "name": "Bianca Mendes Carvalho",
+    "name": "Phoenix Ember",
     "following": []
   },
   {
     "id": 16,
-    "name": "Carlos Henrique Alves",
+    "name": "Helios Blaze",
     "following": []
   },
   {
     "id": 17,
-    "name": "Fernanda Ribeiro",
+    "name": "Stella Polaris",
     "following": []
   },
   {
     "id": 18,
-    "name": "Marcelo Martins Batista",
+    "name": "Comet Strider",
     "following": []
   },
   {
     "id": 19,
-    "name": "Patrícia Dias Pereira",
+    "name": "Liora Zenith",
     "following": []
   },
   {
     "id": 20,
-    "name": "Hugo Batista",
+    "name": "Aurion Skye",
     "following": []
   },
   {
     "id": 21,
-    "name": "Priscila Ramos Souza",
+    "name": "Vega Starfall",
     "following": []
   },
   {
     "id": 22,
-    "name": "Thiago Andrade Silva",
+    "name": "Orla Tide",
     "following": []
   },
   {
     "id": 23,
-    "name": "Elaine Carvalho Nunes",
+    "name": "Nyx Eclipse",
     "following": []
   },
   {
     "id": 24,
-    "name": "Bruno Barros Queiroz",
+    "name": "Drake Storm",
     "following": []
   },
   {
     "id": 25,
-    "name": "Raquel Correia",
+    "name": "Aria Mist",
     "following": []
   },
   {
     "id": 26,
-    "name": "César Teixeira Oliveira",
+    "name": "Lumen Frost",
     "following": []
   },
   {
     "id": 27,
-    "name": "Cláudia de Paula Machado",
+    "name": "Caius Spark",
     "following": []
   },
   {
     "id": 28,
-    "name": "Eduardo Araújo Silva",
+    "name": "Eira Glow",
     "following": []
   },
   {
     "id": 29,
-    "name": "Viviane Azevedo Costa",
+    "name": "Riven Ash",
     "following": []
   },
   {
     "id": 30,
-    "name": "André Santos",
+    "name": "Cyra Dawnlight",
     "following": []
   },
   {
     "id": 31,
-    "name": "Michele Farias",
+    "name": "Kael Tempest",
     "following": []
   },
   {
     "id": 32,
-    "name": "Ricardo Pinto",
+    "name": "Astrid Glowforge",
     "following": []
   },
   {
     "id": 33,
-    "name": "Flávia Souza Pereira",
+    "name": "Nova Bright",
     "following": []
   },
   {
     "id": 34,
-    "name": "Igor Campos Monteiro",
+    "name": "Vesper Lune",
     "following": []
   },
   {
     "id": 35,
-    "name": "Juliana Cardoso Almeida",
+    "name": "Rhea Solarflare",
     "following": []
   },
   {
     "id": 36,
-    "name": "Rodrigo Monteiro Franco",
+    "name": "Ignis Shadowbane",
     "following": []
   },
   {
     "id": 37,
-    "name": "Tatiane Monteiro Lima",
+    "name": "Celeste Comet",
     "following": []
   },
   {
     "id": 38,
-    "name": "Leandro Cunha Alves",
+    "name": "Zane Radiance",
     "following": []
   },
   {
     "id": 39,
-    "name": "Cristina Assis Fernandes",
+    "name": "Talia Etherial",
     "following": []
   },
   {
     "id": 40,
-    "name": "Antonio Coelho",
+    "name": "Lior Blazeheart",
     "following": []
   },
   {
     "id": 41,
-    "name": "Monique Queiroz Lima",
+    "name": "Seren Frostveil",
     "following": []
   },
   {
     "id": 42,
-    "name": "Fábio Bastos Dias",
+    "name": "Calix Nova",
     "following": []
   },
   {
     "id": 43,
-    "name": "Daniele Maciel Souza",
+    "name": "Isolde Brightshade",
     "following": []
   },
   {
     "id": 44,
-    "name": "Otávio Medeiros Silva",
+    "name": "Zephyr Tempest",
     "following": []
   },
   {
     "id": 45,
-    "name": "Vanessa Sousa Peres",
+    "name": "Nyra Sundrop",
     "following": []
   },
   {
     "id": 46,
-    "name": "Renato Moura Costa",
+    "name": "Thalor Wavecrest",
     "following": []
   },
   {
     "id": 47,
-    "name": "Aline Gomes Almeida",
+    "name": "Asha Starwhisper",
     "following": []
   },
   {
     "id": 48,
-    "name": "Murilo Melo Carvalho",
+    "name": "Darius Eclipseforge",
     "following": []
   },
   {
     "id": 49,
-    "name": "Luciana Braga Azevedo",
+    "name": "Elara Skylume",
     "following": []
   },
   {
     "id": 50,
-    "name": "João Vitor Lima",
-    "following": []
-  },
-  {
-    "id": 1,
-    "name": "Nicole Damasceno Alves",
-    "following": []
-  },
-  {
-    "id": 2,
-    "name": "Samuel Rios Furtado",
-    "following": []
-  },
-  {
-    "id": 3,
-    "name": "Paula Amorim Dias",
-    "following": []
-  },
-  {
-    "id": 4,
-    "name": "Leonardo Freitas Machado",
-    "following": []
-  },
-  {
-    "id": 5,
-    "name": "Lilian Santana Nogueira",
-    "following": []
-  },
-  {
-    "id": 6,
-    "name": "Diego Rezende Santos",
-    "following": []
-  },
-  {
-    "id": 7,
-    "name": "Mariana Drumond Fernandes",
-    "following": []
-  },
-  {
-    "id": 8,
-    "name": "Guilherme Moreira Vasconcelos",
-    "following": []
-  },
-  {
-    "id": 9,
-    "name": "Tatiana Ferreira Costa",
-    "following": []
-  },
-  {
-    "id": 10,
-    "name": "Pedro Marques Souza",
-    "following": []
-  },
-  {
-    "id": 11,
-    "name": "Adriana Campos Almeida",
-    "following": []
-  },
-  {
-    "id": 12,
-    "name": "Matheus Silveira Cardoso",
-    "following": []
-  },
-  {
-    "id": 13,
-    "name": "Regina Fernanda Barros",
-    "following": []
-  },
-  {
-    "id": 14,
-    "name": "Júlio Cezar Farias",
-    "following": []
-  },
-  {
-    "id": 15,
-    "name": "Lorena Teles Ribeiro",
-    "following": []
-  },
-  {
-    "id": 16,
-    "name": "Augusto Maia Santos",
-    "following": []
-  },
-  {
-    "id": 17,
-    "name": "Beatriz Valle Souza",
-    "following": []
-  },
-  {
-    "id": 18,
-    "name": "Otávia Moraes Dias",
-    "following": []
-  },
-  {
-    "id": 19,
-    "name": "Sérgio Aguiar Nogueira",
-    "following": []
-  },
-  {
-    "id": 20,
-    "name": "Carolina Ventura Barbosa",
-    "following": []
-  },
-  {
-    "id": 21,
-    "name": "Marcela Figueiredo Costa",
-    "following": []
-  },
-  {
-    "id": 22,
-    "name": "Hélio Moura Machado",
-    "following": []
-  },
-  {
-    "id": 23,
-    "name": "Sônia Pereira Barbosa",
-    "following": []
-  },
-  {
-    "id": 24,
-    "name": "Wallace Quintana Azevedo",
-    "following": []
-  },
-  {
-    "id": 25,
-    "name": "Isadora Albuquerque Cunha",
-    "following": []
-  },
-  {
-    "id": 26,
-    "name": "Alessandro Borges Teixeira",
-    "following": []
-  },
-  {
-    "id": 27,
-    "name": "Lucia Magalhães Fernandes",
-    "following": []
-  },
-  {
-    "id": 28,
-    "name": "Eduarda Rocha Lima",
-    "following": []
-  },
-  {
-    "id": 29,
-    "name": "Maurício Pires Souza",
-    "following": []
-  },
-  {
-    "id": 30,
-    "name": "Jéssica Neves Cardoso",
-    "following": []
-  },
-  {
-    "id": 31,
-    "name": "Paulo César Silva",
-    "following": []
-  },
-  {
-    "id": 32,
-    "name": "Cecília Viana Andrade",
-    "following": []
-  },
-  {
-    "id": 33,
-    "name": "Francisco Tavares Maia",
-    "following": []
-  },
-  {
-    "id": 34,
-    "name": "Larissa Barreto Lima",
-    "following": []
-  },
-  {
-    "id": 35,
-    "name": "Roberto Sales Cunha",
-    "following": []
-  },
-  {
-    "id": 36,
-    "name": "Simone Melo dos Santos",
-    "following": []
-  },
-  {
-    "id": 37,
-    "name": "Vitor Hugo Fernandes",
-    "following": []
-  },
-  {
-    "id": 38,
-    "name": "Cristiane Xavier Soares",
-    "following": []
-  },
-  {
-    "id": 39,
-    "name": "Heitor Cruz Lima",
-    "following": []
-  },
-  {
-    "id": 40,
-    "name": "Márcia Oliveira Carvalho",
-    "following": []
-  },
-  {
-    "id": 41,
-    "name": "Fábio Lima Andrade",
-    "following": []
-  },
-  {
-    "id": 42,
-    "name": "Suellen Ramos Rocha",
-    "following": []
-  },
-  {
-    "id": 43,
-    "name": "Leonel Vidal Lima",
-    "following": []
-  },
-  {
-    "id": 44,
-    "name": "Alana Souza Gomes",
-    "following": []
-  },
-  {
-    "id": 45,
-    "name": "Rogério Barros Azevedo",
-    "following": []
-  },
-  {
-    "id": 46,
-    "name": "Helena Mattos Fernandes",
-    "following": []
-  },
-  {
-    "id": 47,
-    "name": "Wellington Rocha Souza",
-    "following": []
-  },
-  {
-    "id": 48,
-    "name": "Clarice Fernandes Silva",
-    "following": []
-  },
-  {
-    "id": 49,
-    "name": "Armando Dias Barbosa",
-    "following": []
-  },
-  {
-    "id": 50,
-    "name": "Luana Andrade Lima",
+    "name": "Riven Voidstrider",
     "following": []
   }
 ]
