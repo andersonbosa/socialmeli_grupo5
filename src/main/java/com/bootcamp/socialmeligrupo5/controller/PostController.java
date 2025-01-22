@@ -2,6 +2,7 @@ package com.bootcamp.socialmeligrupo5.controller;
 
 import com.bootcamp.socialmeligrupo5.dto.CreatePostRequestDTO;
 import com.bootcamp.socialmeligrupo5.dto.PostDTO;
+import com.bootcamp.socialmeligrupo5.dto.CreatePromoPostRequestDTO;
 import com.bootcamp.socialmeligrupo5.service.PostService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
@@ -31,5 +32,11 @@ public class PostController {
     @GetMapping("/followed/{userId}/list")
     public ResponseEntity<List<PostDTO>> findFollowedSellersRecentPosts(@PathVariable @Positive Long userId) {
         return ResponseEntity.ok(postService.findFollowedSellersLastTwoWeeksPosts(userId));
+    }
+
+    @PostMapping("/promo-post")
+    public ResponseEntity<?> newPromoPost(@Valid @RequestBody CreatePromoPostRequestDTO dto) {
+        postService.registerNewPromoPost(dto);
+        return ResponseEntity.ok().build();
     }
 }

@@ -1,6 +1,8 @@
 package com.bootcamp.socialmeligrupo5.service;
 
-import com.bootcamp.socialmeligrupo5.dto.*;
+import com.bootcamp.socialmeligrupo5.dto.CreatePostRequestDTO;
+import com.bootcamp.socialmeligrupo5.dto.CreatePromoPostRequestDTO;
+import com.bootcamp.socialmeligrupo5.dto.ProductDTO;
 import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Product;
 import com.bootcamp.socialmeligrupo5.repository.PostRepository;
@@ -29,6 +31,12 @@ public class PostService {
         this.postRepository.create(post);
     }
 
+    public void registerNewPromoPost(CreatePromoPostRequestDTO postDto) {
+        Post post = convertPromoPostDtoToPost(postDto);
+        sellerService.findSeller(post.getSellerId());
+        this.postRepository.create(post);
+    }
+
     public List<PostDTO> findFollowedSellersLastTwoWeeksPosts(Long userId) {
         LocalDate twoWeeksAgo = LocalDate.now().minusWeeks(2);
         LocalDate today = LocalDate.now();
@@ -51,7 +59,20 @@ public class PostService {
                 product,
                 p.price()
         );
+    }
 
+    private Post convertPromoPostDtoToPost(CreatePromoPostRequestDTO dto) {
+        Product product = convertProductDtoToProduct(dto.product());
+        return new Post(
+                (long) postRepository.findAll().size(),
+                LocalDate.parse(dto.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
+                dto.category(),
+                dto.user_id(),
+                product,
+                dto.price(),
+                dto.discount(),
+                dto.has_promo()
+        );
     }
 
     private PostDTO convertPostToPostDto(Post post) {
