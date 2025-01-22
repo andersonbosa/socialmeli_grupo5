@@ -31,7 +31,7 @@ public class InMemoryPostRepository implements PostRepository {
 		public List<Post> findBySellerIdBetweenDates(List<Long> sellerIds, LocalDate start, LocalDate end) {
 				return posts.stream().filter(
 						post -> sellerIds.contains(post.getSellerId()) && (!post.getDate().isBefore(start) && !post.getDate().isAfter(end))
-				).sorted(Comparator.comparing(Post::getDate)).toList();
+				).sorted(Comparator.comparing(Post::getDate).reversed()).toList();
 		}
 
     @Override
