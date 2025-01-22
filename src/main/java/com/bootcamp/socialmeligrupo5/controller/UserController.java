@@ -45,12 +45,7 @@ public class UserController {
             @PathVariable @NotNull @Positive Long userId,
             @RequestParam(required = false) String order
     ) {
-
-        SellerFollowersResponseDTO responseDTO = order == null ?
-                sellerService.listSellerFollowers(userId) :
-                sellerService.listFollowersWithOrder(userId, order);
-
-        return ResponseEntity.ok().body(responseDTO);
+        return ResponseEntity.ok().body(sellerService.listSellerFollowers(userId, order));
     }
 
     @GetMapping("/{userId}/followed/list")
@@ -58,11 +53,7 @@ public class UserController {
             @PathVariable @NotNull @Positive Long userId,
             @RequestParam(required = false) String order
     ) {
-        BuyerFollowingResponseDTO responseDTO = order == null ?
-                buyerService.buyerFollowing(userId) :
-                buyerService.buyerFollowingWithOrder(userId, order);
-
-        return ResponseEntity.ok().body(responseDTO);
+        return ResponseEntity.ok().body(buyerService.buyerFollowing(userId, order));
     }
 
 }
