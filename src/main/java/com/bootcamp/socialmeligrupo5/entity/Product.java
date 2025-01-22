@@ -10,12 +10,13 @@ public class Product {
 
 		public Product () {}
 
-		public Product(String brand, String color, Long id, String name, String notes) {
+		public Product(String brand, String color, Long id, String name, String notes, String type) {
 				this.brand = brand;
 				this.color = color;
 				this.id = id;
 				this.name = name;
 				this.notes = notes;
+				this.type = type;
 		}
 
 		public String getBrand() {

@@ -1,14 +1,11 @@
 package com.bootcamp.socialmeligrupo5.service;
 
 import com.bootcamp.socialmeligrupo5.dto.FollowersCountResponseDTO;
-import com.bootcamp.socialmeligrupo5.dto.PromoProductsCountResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.SellerFollowersResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.UserResponseDTO;
 import com.bootcamp.socialmeligrupo5.entity.Buyer;
-import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Seller;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
-import com.bootcamp.socialmeligrupo5.repository.PostRepository;
 import com.bootcamp.socialmeligrupo5.repository.SellerRepository;
 import com.bootcamp.socialmeligrupo5.util.UserUtil;
 import org.springframework.stereotype.Service;
@@ -20,11 +17,9 @@ import java.util.Set;
 public class SellerService {
 
     private final SellerRepository sellerRepository;
-    private final PostRepository postRepository;
 
-    public SellerService(SellerRepository sellerRepository, PostRepository postRepository) {
+    public SellerService(SellerRepository sellerRepository) {
         this.sellerRepository = sellerRepository;
-        this.postRepository = postRepository;
     }
 
     public FollowersCountResponseDTO followersCount(Long userId) {
@@ -46,14 +41,6 @@ public class SellerService {
         }
 
         return new SellerFollowersResponseDTO(seller.getId(), seller.getName(), followers);
-    }
-
-    public PromoProductsCountResponseDTO countSellerPromoProducts(Long sellerId) {
-        Seller seller = findSeller(sellerId);
-        List<Post> posts = postRepository.findBySellerId(sellerId);
-        Long count = posts.stream().filter(Post::getHasPromo).count();
-        int promoProductsCount = Integer.parseInt(count.toString());
-        return new PromoProductsCountResponseDTO(sellerId, seller.getName(), promoProductsCount);
     }
 
     public Seller findSeller(Long userId) {
