@@ -91,11 +91,11 @@ public class PostService {
                 (long) postRepository.findAll().size(),
                 LocalDate.parse(dto.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
                 dto.category(),
-                dto.user_id(),
+                dto.userId(),
                 product,
                 dto.price(),
                 dto.discount(),
-                dto.has_promo()
+                dto.hasPromo()
         );
     }
 

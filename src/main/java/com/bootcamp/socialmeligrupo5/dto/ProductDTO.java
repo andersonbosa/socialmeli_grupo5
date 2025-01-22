@@ -1,18 +1,18 @@
 package com.bootcamp.socialmeligrupo5.dto;
 
+import com.bootcamp.socialmeligrupo5.annotations.Id;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Positive;
 
 public record ProductDTO(
-        @Positive(message = "productId deve ser um número positivo")
+        @Id
         Long productId,
-        @NotEmpty(message = "productName não deve ser vazio")
+        @NotEmpty
         String productName,
-        @NotEmpty(message = "type não deve ser vazio")
+        @NotEmpty
         String type,
-        @NotEmpty(message = "brand não deve ser vazio")
+        @NotEmpty
         String brand,
-        @NotEmpty(message = "color não deve ser vazio")
+        @NotEmpty
         String color,
-        @NotEmpty(message = "notes não deve ser vazio")
+        @NotEmpty
         String notes) {}
