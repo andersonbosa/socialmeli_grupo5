@@ -1,5 +1,6 @@
 package com.bootcamp.socialmeligrupo5.controller;
 
+import com.bootcamp.socialmeligrupo5.annotations.Id;
 import com.bootcamp.socialmeligrupo5.dto.FollowersCountResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.SellerFollowersResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
@@ -26,8 +27,8 @@ public class UserController {
 
     @PostMapping("/{userId}/follow/{userIdToFollow}")
     public ResponseEntity<?> followSeller(
-            @PathVariable Long userId,
-            @PathVariable Long userIdToFollow
+            @PathVariable @Id Long userId,
+            @PathVariable @Id Long userIdToFollow
     ) {
         buyerService.followSeller(userId, userIdToFollow);
         return ResponseEntity.ok().build();
@@ -35,21 +36,21 @@ public class UserController {
 
     @GetMapping("/{userId}/followers/count")
     public ResponseEntity<FollowersCountResponseDTO> followersCount(
-            @PathVariable @NotNull @Positive Long userId
+            @PathVariable @Id Long userId
     ) {
         return ResponseEntity.ok().body(sellerService.followersCount(userId));
     }
 
     @GetMapping("/{userId}/followers/list")
     public ResponseEntity<SellerFollowersResponseDTO> listSellerFollowers(
-        @PathVariable @NotNull @Positive Long userId
+        @PathVariable @Id Long userId
     ) {
         return ResponseEntity.ok().body(sellerService.listSellerFollowers(userId));
     }
 
     @GetMapping("/{userId}/followed/list")
     public ResponseEntity<BuyerFollowingResponseDTO> buyerFollowing(
-            @PathVariable @NotNull @Positive Long userId
+            @PathVariable @Id Long userId
     ) {
         return ResponseEntity.ok().body(buyerService.buyerFollowing(userId));
     }
