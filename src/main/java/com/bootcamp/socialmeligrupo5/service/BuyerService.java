@@ -4,7 +4,6 @@ import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.UserResponseDTO;
 import com.bootcamp.socialmeligrupo5.entity.Buyer;
 import com.bootcamp.socialmeligrupo5.entity.Seller;
-import com.bootcamp.socialmeligrupo5.exception.BadRequestException;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.BuyerRepository;
 import com.bootcamp.socialmeligrupo5.util.UserUtil;
@@ -26,10 +25,6 @@ public class BuyerService {
     public void followSeller(Long userId, Long userIdToFollow) {
         Buyer buyer = findBuyer(userId);
         Seller seller = sellerService.findSeller(userIdToFollow);
-
-        if (buyer.getId().equals(seller.getId())) {
-            throw new BadRequestException("Não é permitido que um usuário se siga a si mesmo.");
-        }
 
         buyer.follow(seller);
         seller.addFollower(buyer);
