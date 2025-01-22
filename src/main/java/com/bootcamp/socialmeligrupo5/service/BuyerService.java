@@ -6,7 +6,6 @@ import com.bootcamp.socialmeligrupo5.entity.Buyer;
 import com.bootcamp.socialmeligrupo5.entity.Seller;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.BuyerRepository;
-import com.bootcamp.socialmeligrupo5.repository.SellerRepository;
 import com.bootcamp.socialmeligrupo5.util.UserUtil;
 import org.springframework.stereotype.Service;
 
@@ -16,19 +15,16 @@ import java.util.List;
 public class BuyerService {
 
     private final BuyerRepository buyerRepository;
-    private final SellerRepository sellerRepository;
+    private final SellerService sellerService;
 
-    public BuyerService(BuyerRepository buyerRepository, SellerRepository sellerRepository) {
+    public BuyerService(BuyerRepository buyerRepository, SellerService sellerService) {
         this.buyerRepository = buyerRepository;
-        this.sellerRepository = sellerRepository;
+        this.sellerService = sellerService;
     }
 
     public void followSeller(Long userId, Long userIdToFollow) {
         Buyer buyer = findBuyer(userId);
-        Seller seller = sellerRepository.findById(userIdToFollow);
-        if (seller == null) {
-            throw new NotFoundException("O vendedor enviado nao foi localizado!");
-        }
+        Seller seller = sellerService.findSeller(userIdToFollow);
 
         buyer.follow(seller);
         seller.addFollower(buyer);
