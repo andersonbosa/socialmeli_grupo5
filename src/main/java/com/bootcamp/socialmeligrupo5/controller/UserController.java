@@ -1,14 +1,14 @@
 package com.bootcamp.socialmeligrupo5.controller;
 
 import com.bootcamp.socialmeligrupo5.annotations.Id;
+import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.FollowersCountResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.SellerFollowersResponseDTO;
-import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
 import com.bootcamp.socialmeligrupo5.service.BuyerService;
 import com.bootcamp.socialmeligrupo5.service.SellerService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Validated
@@ -41,16 +41,18 @@ public class UserController {
 
     @GetMapping("/{userId}/followers/list")
     public ResponseEntity<SellerFollowersResponseDTO> listSellerFollowers(
-        @PathVariable @Id Long userId
+        @PathVariable @Id Long userId,
+				@RequestParam(required = false) String order
     ) {
-        return ResponseEntity.ok().body(sellerService.listSellerFollowers(userId));
+        return ResponseEntity.ok().body(sellerService.listSellerFollowers(userId, order));
     }
 
     @GetMapping("/{userId}/followed/list")
     public ResponseEntity<BuyerFollowingResponseDTO> buyerFollowing(
-            @PathVariable @Id Long userId
+            @PathVariable @Id Long userId,
+            @RequestParam(required = false) String order
     ) {
-        return ResponseEntity.ok().body(buyerService.buyerFollowing(userId));
+        return ResponseEntity.ok().body(buyerService.buyerFollowing(userId, order));
     }
 
 }
