@@ -33,7 +33,7 @@ public class PostService {
         LocalDate twoWeeksAgo = LocalDate.now().minusWeeks(2);
         LocalDate today = LocalDate.now();
 
-        BuyerFollowingResponseDTO buyerFollowing = buyerService.buyerFollowing(userId);
+        BuyerFollowingResponseDTO buyerFollowing = buyerService.buyerFollowing(userId, null);
         List<Long> sellerIds = buyerFollowing.following().stream().map(UserResponseDTO::userId).toList();
 
         List<Post> posts = postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today);
