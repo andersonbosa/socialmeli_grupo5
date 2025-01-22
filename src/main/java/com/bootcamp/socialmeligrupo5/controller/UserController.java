@@ -6,8 +6,6 @@ import com.bootcamp.socialmeligrupo5.dto.SellerFollowersResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
 import com.bootcamp.socialmeligrupo5.service.BuyerService;
 import com.bootcamp.socialmeligrupo5.service.SellerService;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.validation.annotation.Validated;
