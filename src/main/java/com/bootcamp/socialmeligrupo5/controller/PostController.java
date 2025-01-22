@@ -1,8 +1,8 @@
 package com.bootcamp.socialmeligrupo5.controller;
 
-import com.bootcamp.socialmeligrupo5.dto.PostDTO;
+import com.bootcamp.socialmeligrupo5.dto.CreatePostRequestDTO;
 import com.bootcamp.socialmeligrupo5.service.PostService;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +22,7 @@ public class PostController {
     }
 
     @PostMapping("/post")
-    public ResponseEntity<?> newPost(@RequestBody @NotNull(message = "A publicação possui atributos incorretos.") PostDTO postDto) {
+    public ResponseEntity<?> newPost(@Valid @RequestBody CreatePostRequestDTO postDto) {
         postService.registerNewPost(postDto);
         return ResponseEntity.ok().build();
     }

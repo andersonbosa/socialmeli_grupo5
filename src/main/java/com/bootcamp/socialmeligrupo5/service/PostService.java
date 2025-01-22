@@ -1,11 +1,9 @@
 package com.bootcamp.socialmeligrupo5.service;
 
-import com.bootcamp.socialmeligrupo5.dto.PostDTO;
+import com.bootcamp.socialmeligrupo5.dto.CreatePostRequestDTO;
 import com.bootcamp.socialmeligrupo5.dto.ProductDTO;
 import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Product;
-import com.bootcamp.socialmeligrupo5.exception.BadRequestException;
-import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
@@ -23,13 +21,13 @@ public class PostService {
         this.sellerService = sellerService;
     }
 
-    public void registerNewPost(PostDTO postDto) {
+    public void registerNewPost(CreatePostRequestDTO postDto) {
         Post post = convertPostDtoToPost(postDto);
         sellerService.findSeller(post.getSellerId());
         this.postRepository.create(post);
     }
 
-    private Post convertPostDtoToPost(PostDTO p) {
+    private Post convertPostDtoToPost(CreatePostRequestDTO p) {
         Product product = convertProductDtoToProduct(p.product());
         return new Post(
                 (long) postRepository.findAll().size(),
