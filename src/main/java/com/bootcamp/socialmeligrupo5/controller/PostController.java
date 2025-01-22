@@ -1,6 +1,7 @@
 package com.bootcamp.socialmeligrupo5.controller;
 
 import com.bootcamp.socialmeligrupo5.dto.CreatePostRequestDTO;
+import com.bootcamp.socialmeligrupo5.dto.CreatePromoPostRequestDTO;
 import com.bootcamp.socialmeligrupo5.service.PostService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +25,12 @@ public class PostController {
     @PostMapping("/post")
     public ResponseEntity<?> newPost(@Valid @RequestBody CreatePostRequestDTO postDto) {
         postService.registerNewPost(postDto);
+        return ResponseEntity.ok().build();
+    }
+
+    @PostMapping("/promo-post")
+    public ResponseEntity<?> newPromoPost(@Valid @RequestBody CreatePromoPostRequestDTO dto) {
+        postService.registerNewPromoPost(dto);
         return ResponseEntity.ok().build();
     }
 }

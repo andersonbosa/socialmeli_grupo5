@@ -7,7 +7,7 @@ import com.bootcamp.socialmeligrupo5.entity.Seller;
 import com.bootcamp.socialmeligrupo5.exception.BadRequestException;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.BuyerRepository;
-import com.bootcamp.socialmeligrupo5.repository.SellerRepository;
+import com.bootcamp.socialmeligrupo5.util.UserUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,22 +16,16 @@ import java.util.List;
 public class BuyerService {
 
     private final BuyerRepository buyerRepository;
-    private final SellerRepository sellerRepository;
+    private final SellerService sellerService;
 
-    public BuyerService(BuyerRepository buyerRepository, SellerRepository sellerRepository) {
+    public BuyerService(BuyerRepository buyerRepository, SellerService sellerService) {
         this.buyerRepository = buyerRepository;
-        this.sellerRepository = sellerRepository;
+        this.sellerService = sellerService;
     }
 
     public void followSeller(Long userId, Long userIdToFollow) {
-        Buyer buyer = buyerRepository.findById(userId);
-        if (buyer == null) {
-            throw new NotFoundException("O comprador enviado nao foi localizado!");
-        }
-        Seller seller = sellerRepository.findById(userIdToFollow);
-        if (seller == null) {
-            throw new NotFoundException("O vendedor enviado nao foi localizado!");
-        }
+        Buyer buyer = findBuyer(userId);
+        Seller seller = sellerService.findSeller(userIdToFollow);
 
         if (buyer.getId().equals(seller.getId())) {
             throw new BadRequestException("Não é permitido que um usuário se siga a si mesmo.");
@@ -41,14 +35,27 @@ public class BuyerService {
         seller.addFollower(buyer);
     }
 
-    public BuyerFollowingResponseDTO buyerFollowing(Long userId) {
-        Buyer buyer = buyerRepository.findById(userId);
+    public BuyerFollowingResponseDTO buyerFollowing(Long userId, String order) {
+        Buyer buyer = findBuyer(userId);
 
         List<UserResponseDTO> following =
                 buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName()))
                         .toList();
 
+        if (order != null) {
+            following = UserUtil.listUsersWithOrder(following, order);
+        }
+
         return new BuyerFollowingResponseDTO(buyer.getId(), buyer.getName(), following);
+    }
+
+
+    private Buyer findBuyer(Long userId) {
+        Buyer buyer = buyerRepository.findById(userId);
+        if (buyer == null) {
+            throw new NotFoundException("O comprador enviado não foi localizado!");
+        }
+        return buyer;
     }
 
 }
