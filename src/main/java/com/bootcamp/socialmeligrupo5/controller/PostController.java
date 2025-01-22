@@ -26,8 +26,11 @@ public class PostController {
     }
 
     @GetMapping("/followed/{userId}/list")
-    public ResponseEntity<SellerPostsResponseDTO> findFollowedSellersRecentPosts(@PathVariable @Positive Long userId) {
-        return ResponseEntity.ok(postService.findFollowedSellersLastTwoWeeksPosts(userId));
+    public ResponseEntity<SellerPostsResponseDTO> findFollowedSellersRecentPosts(
+            @PathVariable @Positive Long userId,
+            @RequestParam(required = false) String order
+    ) {
+        return ResponseEntity.ok(postService.findFollowedSellersLastTwoWeeksPosts(userId, order));
     }
 
     @PostMapping("/promo-post")
