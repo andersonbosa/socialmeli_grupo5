@@ -4,6 +4,7 @@ import com.bootcamp.socialmeligrupo5.dto.BuyerFollowingResponseDTO;
 import com.bootcamp.socialmeligrupo5.dto.UserResponseDTO;
 import com.bootcamp.socialmeligrupo5.entity.Buyer;
 import com.bootcamp.socialmeligrupo5.entity.Seller;
+import com.bootcamp.socialmeligrupo5.exception.BadRequestException;
 import com.bootcamp.socialmeligrupo5.exception.NotFoundException;
 import com.bootcamp.socialmeligrupo5.repository.BuyerRepository;
 import com.bootcamp.socialmeligrupo5.repository.SellerRepository;
@@ -32,6 +33,10 @@ public class BuyerService {
             throw new NotFoundException("O vendedor enviado nao foi localizado!");
         }
 
+        if (buyer.getId().equals(seller.getId())) {
+            throw new BadRequestException("Não é permitido que um usuário se siga a si mesmo.");
+        }
+
         buyer.follow(seller);
         seller.addFollower(buyer);
     }
@@ -39,7 +44,9 @@ public class BuyerService {
     public BuyerFollowingResponseDTO buyerFollowing(Long userId) {
         Buyer buyer = buyerRepository.findById(userId);
 
-        List<UserResponseDTO> following = buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName())).toList();
+        List<UserResponseDTO> following =
+                buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName()))
+                        .toList();
 
         return new BuyerFollowingResponseDTO(buyer.getId(), buyer.getName(), following);
     }
