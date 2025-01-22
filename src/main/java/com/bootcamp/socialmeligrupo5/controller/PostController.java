@@ -3,6 +3,7 @@ package com.bootcamp.socialmeligrupo5.controller;
 import com.bootcamp.socialmeligrupo5.dto.CreatePostRequestDTO;
 import com.bootcamp.socialmeligrupo5.dto.PostDTO;
 import com.bootcamp.socialmeligrupo5.dto.CreatePromoPostRequestDTO;
+import com.bootcamp.socialmeligrupo5.dto.PromoProductsCountResponseDTO;
 import com.bootcamp.socialmeligrupo5.service.PostService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
@@ -38,5 +39,11 @@ public class PostController {
     public ResponseEntity<?> newPromoPost(@Valid @RequestBody CreatePromoPostRequestDTO dto) {
         postService.registerNewPromoPost(dto);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/promo-post/count")
+    public ResponseEntity<PromoProductsCountResponseDTO> getPromoPostCount(@RequestParam(name = "user_id") Long userId) {
+        PromoProductsCountResponseDTO dto = this.postService.countSellerPromoProducts(userId);
+        return ResponseEntity.ok(dto);
     }
 }

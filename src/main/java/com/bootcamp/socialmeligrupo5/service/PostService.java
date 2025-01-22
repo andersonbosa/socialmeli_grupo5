@@ -1,10 +1,9 @@
 package com.bootcamp.socialmeligrupo5.service;
 
-import com.bootcamp.socialmeligrupo5.dto.CreatePostRequestDTO;
-import com.bootcamp.socialmeligrupo5.dto.CreatePromoPostRequestDTO;
-import com.bootcamp.socialmeligrupo5.dto.ProductDTO;
+import com.bootcamp.socialmeligrupo5.dto.*;
 import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Product;
+import com.bootcamp.socialmeligrupo5.entity.Seller;
 import com.bootcamp.socialmeligrupo5.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
@@ -47,6 +46,14 @@ public class PostService {
         List<Post> posts = postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today);
 
         return posts.stream().map(this::convertPostToPostDto).toList();
+    }
+
+    public PromoProductsCountResponseDTO countSellerPromoProducts(Long sellerId) {
+        Seller seller = sellerService.findSeller(sellerId);
+        List<Post> posts = postRepository.findBySellerId(sellerId);
+        Long count = posts.stream().filter(Post::getHasPromo).count();
+        int promoProductsCount = Integer.parseInt(count.toString());
+        return new PromoProductsCountResponseDTO(sellerId, seller.getName(), promoProductsCount);
     }
 
     private Post convertPostDtoToPost(CreatePostRequestDTO p) {
