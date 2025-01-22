@@ -57,4 +57,8 @@ public class InMemoryPostRepository implements PostRepository {
             System.out.println(ex.getMessage());
         }
     }
+
+    public List<Post> findAll() {
+        return posts;
+    }
 }

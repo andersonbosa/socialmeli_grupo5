@@ -9,4 +9,5 @@ public interface PostRepository {
 		void create(Post post);
 		List<Post> findBySellerIdBetweenDates(Long sellerId, LocalDate start, LocalDate end);
     List<Post> findBySellerId(Long sellerId);
+    List<Post> findAll();
 }
