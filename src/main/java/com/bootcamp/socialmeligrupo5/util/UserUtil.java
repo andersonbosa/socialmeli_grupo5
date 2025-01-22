@@ -16,7 +16,7 @@ public class UserUtil {
         validateOrder(order);
         Comparator<UserResponseDTO> comparator = Comparator.comparing(UserResponseDTO::userName);
 
-        if (order.equalsIgnoreCase("name_asc")) {
+        if (order.equalsIgnoreCase("name_desc")) {
             comparator = comparator.reversed();
         }
 
