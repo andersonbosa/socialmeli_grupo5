@@ -42,7 +42,7 @@ public class UserController {
     @GetMapping("/{userId}/followers/list")
     public ResponseEntity<SellerFollowersResponseDTO> listSellerFollowers(
         @PathVariable @Id Long userId,
-				@RequestParam(required = false) String order
+        @RequestParam(required = false) String order
     ) {
         return ResponseEntity.ok().body(sellerService.listSellerFollowers(userId, order));
     }

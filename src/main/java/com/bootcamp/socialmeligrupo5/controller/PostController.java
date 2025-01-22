@@ -1,9 +1,9 @@
 package com.bootcamp.socialmeligrupo5.controller;
 
+import com.bootcamp.socialmeligrupo5.annotations.Id;
 import com.bootcamp.socialmeligrupo5.dto.*;
 import com.bootcamp.socialmeligrupo5.service.PostService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Positive;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +26,7 @@ public class PostController {
     }
 
     @GetMapping("/followed/{userId}/list")
-    public ResponseEntity<SellerPostsResponseDTO> findFollowedSellersRecentPosts(@PathVariable @Positive Long userId) {
+    public ResponseEntity<SellerPostsResponseDTO> findFollowedSellersRecentPosts(@PathVariable @Id Long userId) {
         return ResponseEntity.ok(postService.findFollowedSellersLastTwoWeeksPosts(userId));
     }
 

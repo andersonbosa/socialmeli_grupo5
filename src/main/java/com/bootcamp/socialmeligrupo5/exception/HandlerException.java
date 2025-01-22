@@ -31,7 +31,8 @@ public class HandlerException {
 
         FieldError firstError = (FieldError) ex.getBindingResult().getAllErrors().getFirst();
         String errorMessage = firstError.getDefaultMessage();
-        ExceptionDTO exceptionDTO = new ExceptionDTO(errorMessage);
+        String fieldName = firstError.getField();
+        ExceptionDTO exceptionDTO = new ExceptionDTO(fieldName + " "+ errorMessage);
 
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionDTO);
     }
