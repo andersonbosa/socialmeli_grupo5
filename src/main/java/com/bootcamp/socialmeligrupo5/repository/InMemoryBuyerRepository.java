@@ -13,41 +13,41 @@ import java.util.List;
 
 @Repository
 public class InMemoryBuyerRepository implements BuyerRepository {
-    public List<Buyer> buyers = new ArrayList<>();
+	public List<Buyer> buyers = new ArrayList<>();
 
-    public InMemoryBuyerRepository() {
-        loadDataBase();
-    }
+	public InMemoryBuyerRepository() {
+		loadDataBase();
+	}
 
-    @Override
-    public Buyer findById(Long id) {
-        return this.buyers.stream().filter(b -> b.getId().equals(id)).findFirst().orElse(null);
-    }
+	@Override
+	public Buyer findById(Long id) {
+		return this.buyers.stream().filter(b -> b.getId().equals(id)).findFirst().orElse(null);
+	}
 
-    @Override
-    public void update(Buyer buyer) {
+	@Override
+	public void update(Buyer buyer) {
 
-    }
+	}
 
-    private void loadDataBase() {
+	private void loadDataBase() {
 
-        try {
-            File file;
-            ObjectMapper objectMapper = new ObjectMapper();
-            List<Buyer> buyersJson;
+		try {
+			File file;
+			ObjectMapper objectMapper = new ObjectMapper();
+			List<Buyer> buyersJson;
 
-            file = ResourceUtils.getFile("src/main/resources/users_buyer_50.json");
-            buyersJson = objectMapper.readValue(
-                    file, new TypeReference<List<Buyer>>() {
-                    }
-            );
+			file = ResourceUtils.getFile("src/main/resources/users_buyer_50.json");
+			buyersJson = objectMapper.readValue(
+					file, new TypeReference<List<Buyer>>() {
+					}
+			);
 
-            buyers = buyersJson;
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
+			buyers = buyersJson;
+		} catch (IOException ex) {
+			System.out.println(ex.getMessage());
+		}
 
 
-    }
+	}
 
 }

@@ -14,57 +14,57 @@ import java.util.List;
 @Service
 public class BuyerService {
 
-    private final BuyerRepository buyerRepository;
-    private final SellerService sellerService;
+	private final BuyerRepository buyerRepository;
+	private final SellerService sellerService;
 
-    public BuyerService(BuyerRepository buyerRepository, SellerService sellerService) {
-        this.buyerRepository = buyerRepository;
-        this.sellerService = sellerService;
-    }
+	public BuyerService(BuyerRepository buyerRepository, SellerService sellerService) {
+		this.buyerRepository = buyerRepository;
+		this.sellerService = sellerService;
+	}
 
-    public void followSeller(Long userId, Long userIdToFollow) {
-        Buyer buyer = findBuyer(userId);
-        Seller seller = sellerService.findSeller(userIdToFollow);
+	public void followSeller(Long userId, Long userIdToFollow) {
+		Buyer buyer = findBuyer(userId);
+		Seller seller = sellerService.findSeller(userIdToFollow);
 
-        buyer.follow(seller);
-        seller.addFollower(buyer);
-    }
+		buyer.follow(seller);
+		seller.addFollower(buyer);
+	}
 
-    public BuyerFollowingResponseDTO buyerFollowing(Long userId, String order) {
-        Buyer buyer = findBuyer(userId);
+	public BuyerFollowingResponseDTO buyerFollowing(Long userId, String order) {
+		Buyer buyer = findBuyer(userId);
 
-        List<UserResponseDTO> following =
-                buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName()))
-                        .toList();
+		List<UserResponseDTO> following =
+				buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName()))
+						.toList();
 
-        if (order != null) {
-            following = UserUtil.listUsersWithOrder(following, order);
-        }
+		if (order != null) {
+			following = UserUtil.listUsersWithOrder(following, order);
+		}
 
-        return new BuyerFollowingResponseDTO(buyer.getId(), buyer.getName(), following);
-    }
+		return new BuyerFollowingResponseDTO(buyer.getId(), buyer.getName(), following);
+	}
 
-    private Buyer findBuyer(Long userId) {
-        Buyer buyer = buyerRepository.findById(userId);
-        if (buyer == null) {
-            throw new NotFoundException("O comprador enviado não foi localizado!");
-        }
-        return buyer;
-    }
+	private Buyer findBuyer(Long userId) {
+		Buyer buyer = buyerRepository.findById(userId);
+		if (buyer == null) {
+			throw new NotFoundException("O comprador enviado não foi localizado!");
+		}
+		return buyer;
+	}
 
-    public void unfollowSeller(Long userId, Long userIdToUnfollow) {
-        Buyer buyer = findBuyer(userId);
-        Seller seller = sellerService.findSeller(userIdToUnfollow);
-        isFollower(buyer, seller);
-        buyer.unfollow(seller);
-        seller.removeFollower(buyer);
-    }
+	public void unfollowSeller(Long userId, Long userIdToUnfollow) {
+		Buyer buyer = findBuyer(userId);
+		Seller seller = sellerService.findSeller(userIdToUnfollow);
+		isFollower(buyer, seller);
+		buyer.unfollow(seller);
+		seller.removeFollower(buyer);
+	}
 
-    private void isFollower(Buyer buyer, Seller seller) {
-        seller.getFollowers().stream()
-                .filter(f -> f.getId().equals(buyer.getId()))
-                .findFirst()
-                .orElseThrow(() -> new NotFoundException("O comprador enviado não é um seguidor do vendedor enviado!"));
-    }
+	private void isFollower(Buyer buyer, Seller seller) {
+		seller.getFollowers().stream()
+				.filter(f -> f.getId().equals(buyer.getId()))
+				.findFirst()
+				.orElseThrow(() -> new NotFoundException("O comprador enviado não é um seguidor do vendedor enviado!"));
+	}
 
 }

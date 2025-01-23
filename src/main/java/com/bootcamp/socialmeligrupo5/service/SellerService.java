@@ -16,38 +16,38 @@ import java.util.Set;
 @Service
 public class SellerService {
 
-    private final SellerRepository sellerRepository;
+	private final SellerRepository sellerRepository;
 
-    public SellerService(SellerRepository sellerRepository) {
-        this.sellerRepository = sellerRepository;
-    }
+	public SellerService(SellerRepository sellerRepository) {
+		this.sellerRepository = sellerRepository;
+	}
 
-    public FollowersCountResponseDTO followersCount(Long userId) {
-        Seller seller = findSeller(userId);
-        Set<Buyer> sellerFollowers = seller.getFollowers();
-        return new FollowersCountResponseDTO(
-                seller.getId(), seller.getName(), sellerFollowers.size());
-    }
+	public FollowersCountResponseDTO followersCount(Long userId) {
+		Seller seller = findSeller(userId);
+		Set<Buyer> sellerFollowers = seller.getFollowers();
+		return new FollowersCountResponseDTO(
+				seller.getId(), seller.getName(), sellerFollowers.size());
+	}
 
-    public SellerFollowersResponseDTO listSellerFollowers(Long sellerId, String order) {
-        Seller seller = findSeller(sellerId);
+	public SellerFollowersResponseDTO listSellerFollowers(Long sellerId, String order) {
+		Seller seller = findSeller(sellerId);
 
-        List<UserResponseDTO> followers =
-                seller.getFollowers().stream().map(f -> new UserResponseDTO(f.getId(), f.getName()))
-                        .toList();
+		List<UserResponseDTO> followers =
+				seller.getFollowers().stream().map(f -> new UserResponseDTO(f.getId(), f.getName()))
+						.toList();
 
-        if (order != null) {
-            followers = UserUtil.listUsersWithOrder(followers, order);
-        }
+		if (order != null) {
+			followers = UserUtil.listUsersWithOrder(followers, order);
+		}
 
-        return new SellerFollowersResponseDTO(seller.getId(), seller.getName(), followers);
-    }
+		return new SellerFollowersResponseDTO(seller.getId(), seller.getName(), followers);
+	}
 
-    public Seller findSeller(Long userId) {
-        Seller seller = sellerRepository.findById(userId);
-        if (seller == null) {
-            throw new NotFoundException("O vendedor enviado não foi localizado!");
-        }
-        return seller;
-    }
+	public Seller findSeller(Long userId) {
+		Seller seller = sellerRepository.findById(userId);
+		if (seller == null) {
+			throw new NotFoundException("O vendedor enviado não foi localizado!");
+		}
+		return seller;
+	}
 }

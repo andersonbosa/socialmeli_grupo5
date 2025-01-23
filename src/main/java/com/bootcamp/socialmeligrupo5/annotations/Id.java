@@ -9,11 +9,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ ElementType.FIELD, ElementType.PARAMETER })
+@Target({ElementType.FIELD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = LongIdValidator.class)
 public @interface Id {
-		String message() default "O Id deve ser um valor numerico positivo";
-		Class<?>[] groups() default {};
-		Class<? extends Payload>[] payload() default {};
+	String message() default "O Id deve ser um valor numerico positivo";
+
+	Class<?>[] groups() default {};
+
+	Class<? extends Payload>[] payload() default {};
 }
