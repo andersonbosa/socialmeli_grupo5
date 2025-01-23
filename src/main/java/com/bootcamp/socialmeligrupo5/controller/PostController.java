@@ -41,13 +41,13 @@ public class PostController {
     }
 
     @GetMapping("/promo-post/count")
-    public ResponseEntity<PromoProductsCountResponseDTO> getPromoPostCount(@RequestParam(name = "user_id") Long userId) {
+    public ResponseEntity<PromoProductsCountResponseDTO> getPromoPostCount(@RequestParam(name = "user_id") @Id Long userId) {
         PromoProductsCountResponseDTO dto = this.postService.countSellerPromoProducts(userId);
         return ResponseEntity.ok(dto);
     }
 
     @GetMapping("/promo-post/list")
-    public ResponseEntity<PromoProductsListResponseDTO> getPromoPostBySellerId(@RequestParam(name = "user_id") Long userId) {
+    public ResponseEntity<PromoProductsListResponseDTO> getPromoPostBySellerId(@RequestParam(name = "user_id") @Id Long userId) {
         PromoProductsListResponseDTO dto = postService.promoPostBySellerId(userId);
         return ResponseEntity.ok(dto);
     }
