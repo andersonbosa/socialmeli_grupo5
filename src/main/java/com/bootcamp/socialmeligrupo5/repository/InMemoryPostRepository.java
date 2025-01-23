@@ -16,57 +16,58 @@ import java.util.List;
 
 @Repository
 public class InMemoryPostRepository implements PostRepository {
-	public List<Post> posts = new ArrayList<>();
+    public List<Post> posts = new ArrayList<>();
 
-	public InMemoryPostRepository() {
-		loadDatabase();
-	}
+    public InMemoryPostRepository() {
+        loadDatabase();
+    }
 
-	@Override
-	public void create(Post post) {
-		posts.add(post);
-	}
+    @Override
+    public void create(Post post) {
+        posts.add(post);
+    }
 
-	@Override
-	public List<Post> findBySellerIdBetweenDates(List<Long> sellerIds, LocalDate start, LocalDate end) {
-		return posts.stream().filter(
-				post -> sellerIds.contains(post.getSellerId()) && (!post.getDate().isBefore(start) && !post.getDate().isAfter(end))
-		).sorted(Comparator.comparing(Post::getDate).reversed()).toList();
-	}
+    @Override
+    public List<Post> findBySellerIdBetweenDates(List<Long> sellerIds, LocalDate start, LocalDate end) {
+        return posts.stream().filter(
+            post -> sellerIds.contains(post.getSellerId()) && (!post.getDate().isBefore(start) && !post.getDate().isAfter(end))
+        ).sorted(Comparator.comparing(Post::getDate).reversed()).toList();
+    }
 
-	@Override
-	public List<Post> findBySellerId(Long sellerId) {
-		return posts.stream()
-				.filter(post -> post.getSellerId().equals(sellerId))
-				.toList();
-	}
+    @Override
+    public List<Post> findBySellerId(Long sellerId) {
+        return posts.stream()
+            .filter(post -> post.getSellerId().equals(sellerId))
+            .toList();
+    }
 
-	@Override
-	public List<Post> findPromoPostBySellerId(Long sellerId) {
-		return posts
-				.stream()
-				.filter(post -> post.getSellerId().equals(sellerId))
-				.filter(post -> post.getHasPromo().equals(true))
-				.toList();
-	}
+    @Override
+    public List<Post> findPromoPostBySellerId(Long sellerId) {
+        return posts
+            .stream()
+            .filter(post -> post.getSellerId().equals(sellerId))
+            .filter(post -> post.getHasPromo().equals(true))
+            .toList();
+    }
 
-	private void loadDatabase() {
-		try {
-			ObjectMapper objectMapper = new ObjectMapper();
+    private void loadDatabase() {
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
 
-			// support Java 8 date time apis
-			objectMapper.registerModule(new JavaTimeModule());
+            // support Java 8 date time apis
+            objectMapper.registerModule(new JavaTimeModule());
 
-			File file = ResourceUtils.getFile("src/main/resources/posts.json");
-			List<Post> newPosts = objectMapper.readValue(file, new TypeReference<List<Post>>() {
-			});
-			posts.addAll(newPosts);
-		} catch (IOException ex) {
-			System.out.println(ex.getMessage());
-		}
-	}
+            File file = ResourceUtils.getFile("src/main/resources/posts.json");
+            List<Post> newPosts = objectMapper.readValue(file, new TypeReference<List<Post>>() {
+            });
+            posts.addAll(newPosts);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 
-	public List<Post> findAll() {
-		return posts;
-	}
+    @Override
+    public List<Post> findAll() {
+        return posts;
+    }
 }

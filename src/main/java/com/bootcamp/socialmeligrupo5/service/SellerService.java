@@ -26,15 +26,15 @@ public class SellerService {
         Seller seller = findSeller(userId);
         Set<Buyer> sellerFollowers = seller.getFollowers();
         return new FollowersCountResponseDTO(
-                seller.getId(), seller.getName(), sellerFollowers.size());
+            seller.getId(), seller.getName(), sellerFollowers.size());
     }
 
     public SellerFollowersResponseDTO listSellerFollowers(Long sellerId, String order) {
         Seller seller = findSeller(sellerId);
 
         List<UserResponseDTO> followers =
-                seller.getFollowers().stream().map(f -> new UserResponseDTO(f.getId(), f.getName()))
-                        .toList();
+            seller.getFollowers().stream().map(f -> new UserResponseDTO(f.getId(), f.getName()))
+                .toList();
 
         if (order != null) {
             followers = UserUtil.listUsersWithOrder(followers, order);

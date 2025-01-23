@@ -28,8 +28,8 @@ public class PostController {
 
     @GetMapping("/followed/{userId}/list")
     public ResponseEntity<SellerPostsResponseDTO> findFollowedSellersRecentPosts(
-            @PathVariable @Id Long userId,
-            @RequestParam(required = false) String order
+        @PathVariable @Id Long userId,
+        @RequestParam(required = false) String order
     ) {
         return ResponseEntity.ok(postService.findFollowedSellersLastTwoWeeksPosts(userId, order));
     }

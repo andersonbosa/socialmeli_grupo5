@@ -38,8 +38,8 @@ public class InMemoryBuyerRepository implements BuyerRepository {
 
             file = ResourceUtils.getFile("src/main/resources/users_buyer_50.json");
             buyersJson = objectMapper.readValue(
-                    file, new TypeReference<List<Buyer>>() {
-                    }
+                file, new TypeReference<List<Buyer>>() {
+                }
             );
 
             buyers = buyersJson;

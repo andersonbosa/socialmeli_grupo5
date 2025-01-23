@@ -1,100 +1,1702 @@
-[{"id":1,"sellerId":26,"category":2,"price":693.92,"hasPromo":false,"discount":0.42,"date":"08-01-2025","product":{"id":1,"name":"Motorola DROID X","brand":"Motorola","color":"Violet","notes":"Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.","type":"Android 2.1, up to 2.3"}},
-  {"id":2,"sellerId":12,"category":10,"price":382.07,"hasPromo":false,"discount":0.52,"date":"22-01-2025","product":{"id":2,"name":"Motorola MT810lx","brand":"Motorola","color":"Aquamarine","notes":"Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.","type":"Android-based OPhone 2.0"}},
-  {"id":3,"sellerId":17,"category":10,"price":626.03,"hasPromo":false,"discount":0.32,"date":"20-01-2025","product":{"id":3,"name":"Honor Note 10","brand":"Honor","color":"Teal","notes":"Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.","type":"Android 8.1, EMUI 8.2"}},
-  {"id":4,"sellerId":20,"category":8,"price":787.85,"hasPromo":true,"discount":0.32,"date":"08-01-2025","product":{"id":4,"name":"Motorola Moto G (3rd gen)","brand":"Motorola","color":"Orange","notes":"Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.","type":"Android 5.1.1, up to 6.0"}},
-  {"id":5,"sellerId":16,"category":9,"price":794.89,"hasPromo":true,"discount":0.45,"date":"22-01-2025","product":{"id":5,"name":"Motorola RAZR MAXX","brand":"Motorola","color":"Pink","notes":"Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.","type":"Android 2.3.6, up to 4.1.2"}},
-  {"id":6,"sellerId":26,"category":5,"price":620.84,"hasPromo":true,"discount":0.44,"date":"16-01-2025","product":{"id":6,"name":"Wiko Y60","brand":"Wiko","color":"Orange","notes":"Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.","type":"Android 9.0 Pie"}},
-  {"id":7,"sellerId":19,"category":3,"price":676.23,"hasPromo":true,"discount":0.68,"date":"20-01-2025","product":{"id":7,"name":"verykool s5035 Spear","brand":"verykool","color":"Red","notes":"Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.","type":"Android 6.0"}},
-  {"id":8,"sellerId":21,"category":6,"price":938.45,"hasPromo":false,"discount":0.49,"date":"09-01-2025","product":{"id":8,"name":"Philips T939","brand":"Philips","color":"Mauv","notes":"Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.","type":"Android 4.0"}},
-  {"id":9,"sellerId":25,"category":2,"price":608.96,"hasPromo":true,"discount":0.03,"date":"09-01-2025","product":{"id":9,"name":"Samsung D600","brand":"Samsung","color":"Goldenrod","notes":"Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.","type":"Feature phone"}},
-  {"id":10,"sellerId":1,"category":6,"price":382.56,"hasPromo":true,"discount":0.75,"date":"22-01-2025","product":{"id":10,"name":"Nokia 222 Dual SIM","brand":"Nokia","color":"Crimson","notes":"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.","type":"Feature phone"}},
-  {"id":11,"sellerId":8,"category":7,"price":417.0,"hasPromo":true,"discount":0.65,"date":"07-01-2025","product":{"id":11,"name":"Samsung SGH-2200","brand":"Samsung","color":"Pink","notes":"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.","type":"Feature phone"}},
-  {"id":12,"sellerId":2,"category":7,"price":653.75,"hasPromo":true,"discount":0.9,"date":"08-01-2025","product":{"id":12,"name":"Gigabyte GSmart Roma RX","brand":"Gigabyte","color":"Turquoise","notes":"Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.","type":"Android 4.4"}},
-  {"id":13,"sellerId":2,"category":2,"price":143.02,"hasPromo":false,"discount":0.03,"date":"08-01-2025","product":{"id":13,"name":"Nokia 808 PureView","brand":"Nokia","color":"Goldenrod","notes":"Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.","type":"Nokia Belle OS"}},
-  {"id":14,"sellerId":8,"category":3,"price":798.92,"hasPromo":false,"discount":0.67,"date":"21-01-2025","product":{"id":14,"name":"Nokia E73 Mode","brand":"Nokia","color":"Blue","notes":"Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.","type":"Symbian OS 9.3, Series 60 v3.2 UI"}},
-  {"id":15,"sellerId":4,"category":4,"price":842.32,"hasPromo":true,"discount":0.33,"date":"09-01-2025","product":{"id":15,"name":"Sony Ericsson Yendo","brand":"Sony","color":"Violet","notes":"Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.","type":"Feature phone"}},
-  {"id":16,"sellerId":4,"category":5,"price":96.89,"hasPromo":true,"discount":0.31,"date":"21-01-2025","product":{"id":16,"name":"Samsung T249","brand":"Samsung","color":"Crimson","notes":"Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.","type":"Feature phone"}},
-  {"id":17,"sellerId":7,"category":2,"price":581.55,"hasPromo":false,"discount":0.23,"date":"08-01-2025","product":{"id":17,"name":"Motorola Timeport 250","brand":"Motorola","color":"Red","notes":"Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.","type":"Feature phone"}},
-  {"id":18,"sellerId":26,"category":8,"price":915.64,"hasPromo":true,"discount":0.93,"date":"16-01-2025","product":{"id":18,"name":"ZTE nubia Z17 mini","brand":"ZTE","color":"Aquamarine","notes":"Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.","type":"Android 6.1, nubia UI 4"}},
-  {"id":19,"sellerId":8,"category":7,"price":414.49,"hasPromo":false,"discount":0.93,"date":"08-01-2025","product":{"id":19,"name":"Samsung Galaxy Tab 3 10.1 P5210","brand":"Samsung","color":"Indigo","notes":"Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.","type":"Android 4.2.2, TouchWiz UI"}},
-  {"id":20,"sellerId":12,"category":8,"price":709.04,"hasPromo":true,"discount":0.79,"date":"12-01-2025","product":{"id":20,"name":"Motorola DEFY XT XT556","brand":"Motorola","color":"Turquoise","notes":"Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.","type":"Android 2.3"}},
-  {"id":21,"sellerId":20,"category":9,"price":131.06,"hasPromo":false,"discount":0.75,"date":"10-01-2025","product":{"id":21,"name":"alcatel OT-870","brand":"alcatel","color":"Red","notes":"Fusce consequat. Nulla nisl. Nunc nisl.","type":"Feature phone"}},
-  {"id":22,"sellerId":23,"category":6,"price":240.82,"hasPromo":false,"discount":0.42,"date":"06-01-2025","product":{"id":22,"name":"Icemobile Sol II","brand":"Icemobile","color":"Goldenrod","notes":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.","type":"Feature phone"}},
-  {"id":23,"sellerId":19,"category":1,"price":207.8,"hasPromo":false,"discount":0.54,"date":"11-01-2025","product":{"id":23,"name":"Gigabyte GSmart G1315 Skate","brand":"Gigabyte","color":"Yellow","notes":"Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.","type":"Android 2.2"}},
-  {"id":24,"sellerId":1,"category":3,"price":633.25,"hasPromo":true,"discount":0.03,"date":"07-01-2025","product":{"id":24,"name":"LG KT770","brand":"LG","color":"Maroon","notes":"Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.","type":"Symbian OS 9.3 Series60 rel. 3.2.3"}},
-  {"id":25,"sellerId":17,"category":7,"price":372.73,"hasPromo":false,"discount":0.14,"date":"20-01-2025","product":{"id":25,"name":"Siemens AF51","brand":"Siemens","color":"Puce","notes":"Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.","type":"Feature phone"}},
-  {"id":26,"sellerId":15,"category":9,"price":291.57,"hasPromo":false,"discount":0.83,"date":"10-01-2025","product":{"id":26,"name":"Motorola A668","brand":"Motorola","color":"Turquoise","notes":"In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.","type":"Feature phone"}},
-  {"id":27,"sellerId":16,"category":8,"price":4.7,"hasPromo":false,"discount":0.67,"date":"12-01-2025","product":{"id":27,"name":"Spice Mi-285 Stellar","brand":"Spice","color":"Indigo","notes":"Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.","type":"Android 2.3"}},
-  {"id":28,"sellerId":16,"category":5,"price":981.31,"hasPromo":true,"discount":0.86,"date":"06-01-2025","product":{"id":28,"name":"alcatel OT-810D","brand":"alcatel","color":"Purple","notes":"Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.","type":"Feature phone"}},
-  {"id":29,"sellerId":25,"category":8,"price":219.75,"hasPromo":false,"discount":0.83,"date":"14-01-2025","product":{"id":29,"name":"Oppo A37","brand":"Oppo","color":"Maroon","notes":"Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.","type":"Android 5.1, ColorOS 3"}},
-  {"id":30,"sellerId":21,"category":6,"price":718.72,"hasPromo":true,"discount":0.61,"date":"10-01-2025","product":{"id":30,"name":"Plum Slick","brand":"Plum","color":"Maroon","notes":"Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.","type":"Feature phone"}},
-  {"id":31,"sellerId":11,"category":4,"price":446.54,"hasPromo":true,"discount":0.2,"date":"17-01-2025","product":{"id":31,"name":"Panasonic GD70","brand":"Panasonic","color":"Indigo","notes":"Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.","type":"Feature phone"}},
-  {"id":32,"sellerId":27,"category":7,"price":223.37,"hasPromo":true,"discount":0.03,"date":"06-01-2025","product":{"id":32,"name":"Posh Equal Pro LTE L700","brand":"Posh","color":"Violet","notes":"Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.","type":"Android 5.1"}},
-  {"id":33,"sellerId":4,"category":7,"price":798.13,"hasPromo":false,"discount":0.06,"date":"14-01-2025","product":{"id":33,"name":"HTC Desire 820G+ dual sim","brand":"HTC","color":"Yellow","notes":"Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.","type":"Android 4.4.2, Sense UI 6"}},
-  {"id":34,"sellerId":16,"category":9,"price":445.72,"hasPromo":false,"discount":0.47,"date":"12-01-2025","product":{"id":34,"name":"ZTE Grand X View 2","brand":"ZTE","color":"Maroon","notes":"Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.","type":"Android 7.1.1"}},
-  {"id":35,"sellerId":7,"category":5,"price":940.82,"hasPromo":false,"discount":0.54,"date":"18-01-2025","product":{"id":35,"name":"Prestigio MultiPad 7.0 Pro","brand":"Prestigio","color":"Purple","notes":"Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.","type":"Android 4.0"}},
-  {"id":36,"sellerId":19,"category":2,"price":936.02,"hasPromo":false,"discount":0.16,"date":"19-01-2025","product":{"id":36,"name":"Samsung L170","brand":"Samsung","color":"Pink","notes":"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.","type":"Feature phone"}},
-  {"id":37,"sellerId":15,"category":1,"price":192.4,"hasPromo":false,"discount":0.73,"date":"15-01-2025","product":{"id":37,"name":"Samsung Gravity TXT T379","brand":"Samsung","color":"Green","notes":"Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.","type":"Feature phone"}},
-  {"id":38,"sellerId":29,"category":7,"price":294.56,"hasPromo":false,"discount":0.17,"date":"18-01-2025","product":{"id":38,"name":"Samsung U100","brand":"Samsung","color":"Orange","notes":"Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.","type":"Feature phone"}},
-  {"id":39,"sellerId":6,"category":3,"price":175.65,"hasPromo":false,"discount":0.28,"date":"16-01-2025","product":{"id":39,"name":"Samsung Galaxy J Max","brand":"Samsung","color":"Teal","notes":"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.","type":"Android 5.1"}},
-  {"id":40,"sellerId":4,"category":9,"price":734.37,"hasPromo":false,"discount":0.64,"date":"09-01-2025","product":{"id":40,"name":"Amoi A90B","brand":"Amoi","color":"Puce","notes":"Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.","type":"Feature phone"}},
-  {"id":41,"sellerId":5,"category":5,"price":873.8,"hasPromo":false,"discount":0.02,"date":"15-01-2025","product":{"id":41,"name":"Sony Xperia Z4v","brand":"Sony","color":"Fuscia","notes":"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.","type":"Android 5.0"}},
-  {"id":42,"sellerId":12,"category":2,"price":465.82,"hasPromo":true,"discount":0.41,"date":"13-01-2025","product":{"id":42,"name":"Samsung Galaxy Tab 4 8.0 (2015)","brand":"Samsung","color":"Indigo","notes":"Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.","type":"Android 4.4.4"}},
-  {"id":43,"sellerId":10,"category":5,"price":929.26,"hasPromo":true,"discount":0.4,"date":"19-01-2025","product":{"id":43,"name":"HP Slate7 Plus","brand":"HP","color":"Khaki","notes":"Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.","type":"Android 4.2.2"}},
-  {"id":44,"sellerId":16,"category":4,"price":415.8,"hasPromo":false,"discount":0.49,"date":"17-01-2025","product":{"id":44,"name":"LG G5","brand":"LG","color":"Goldenrod","notes":"Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.","type":"Android 6.0.1, up to Android 8.0, LG UX 5 UI"}},
-  {"id":45,"sellerId":19,"category":5,"price":312.6,"hasPromo":true,"discount":0.62,"date":"10-01-2025","product":{"id":45,"name":"Huawei Enjoy 5s","brand":"Huawei","color":"Blue","notes":"Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.","type":"Android 5.1.1, EMUI 3.1 Lite"}},
-  {"id":46,"sellerId":26,"category":8,"price":517.25,"hasPromo":false,"discount":0.38,"date":"16-01-2025","product":{"id":46,"name":"Lava Iris 402e","brand":"Lava","color":"Turquoise","notes":"Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.","type":"Android 4.2.2"}},
-  {"id":47,"sellerId":19,"category":8,"price":341.08,"hasPromo":false,"discount":0.08,"date":"12-01-2025","product":{"id":47,"name":"Samsung E251","brand":"Samsung","color":"Puce","notes":"Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.","type":"Feature phone"}},
-  {"id":48,"sellerId":3,"category":8,"price":305.71,"hasPromo":true,"discount":0.47,"date":"12-01-2025","product":{"id":48,"name":"verykool s758","brand":"verykool","color":"Fuscia","notes":"Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.","type":"Android 4.0"}},
-  {"id":49,"sellerId":9,"category":3,"price":549.31,"hasPromo":false,"discount":0.37,"date":"16-01-2025","product":{"id":49,"name":"LG KC910i Renoir","brand":"LG","color":"Red","notes":"Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.","type":"Feature phone"}},
-  {"id":50,"sellerId":27,"category":2,"price":20.21,"hasPromo":true,"discount":0.67,"date":"19-01-2025","product":{"id":50,"name":"ZTE Light Tab 3 V9S","brand":"ZTE","color":"Orange","notes":"Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.","type":"Android 3.2"}},
-  {"id":51,"sellerId":15,"category":3,"price":997.88,"hasPromo":false,"discount":0.62,"date":"17-01-2025","product":{"id":51,"name":"Spice Stellar 439 (Mi-439)","brand":"Spice","color":"Aquamarine","notes":"Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.","type":"Android 4.4.2"}},
-  {"id":52,"sellerId":28,"category":8,"price":603.02,"hasPromo":false,"discount":0.92,"date":"08-01-2025","product":{"id":52,"name":"Honor 8A Prime","brand":"Honor","color":"Red","notes":"In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.","type":"Android 9.0, EMUI 9"}},
-  {"id":53,"sellerId":11,"category":3,"price":340.65,"hasPromo":true,"discount":0.82,"date":"20-01-2025","product":{"id":53,"name":"ZTE Iconic Phablet","brand":"ZTE","color":"Puce","notes":"Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.","type":"Android 4.3"}},
-  {"id":54,"sellerId":8,"category":3,"price":150.04,"hasPromo":false,"discount":0.69,"date":"08-01-2025","product":{"id":54,"name":"Lenovo K6 Note","brand":"Lenovo","color":"Purple","notes":"Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.","type":"Android 6.0"}},
-  {"id":55,"sellerId":25,"category":6,"price":284.39,"hasPromo":false,"discount":0.81,"date":"22-01-2025","product":{"id":55,"name":"Samsung Star 3 Duos S5222","brand":"Samsung","color":"Blue","notes":"Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.","type":"Feature phone"}},
-  {"id":56,"sellerId":19,"category":9,"price":624.84,"hasPromo":false,"discount":0.59,"date":"22-01-2025","product":{"id":56,"name":"Sony Xperia Z3 Tablet Compact","brand":"Sony","color":"Indigo","notes":"In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.","type":"Android 4.4.2, up to 6.0"}},
-  {"id":57,"sellerId":27,"category":5,"price":589.81,"hasPromo":true,"discount":0.42,"date":"19-01-2025","product":{"id":57,"name":"Ericsson T36","brand":"Ericsson","color":"Green","notes":"Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.","type":"Feature phone"}},
-  {"id":58,"sellerId":7,"category":9,"price":356.96,"hasPromo":true,"discount":0.07,"date":"14-01-2025","product":{"id":58,"name":"Sagem my300X","brand":"Sagem","color":"Teal","notes":"Sed ante. Vivamus tortor. Duis mattis egestas metus.","type":"Feature phone"}},
-  {"id":59,"sellerId":12,"category":8,"price":305.38,"hasPromo":false,"discount":0.06,"date":"18-01-2025","product":{"id":59,"name":"Celkon A355","brand":"Celkon","color":"Maroon","notes":"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.","type":"Android 4.4.2"}},
-  {"id":60,"sellerId":9,"category":6,"price":29.24,"hasPromo":true,"discount":0.53,"date":"13-01-2025","product":{"id":60,"name":"Nokia 3208c","brand":"Nokia","color":"Yellow","notes":"Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.","type":"Feature phone"}},
-  {"id":61,"sellerId":12,"category":8,"price":623.66,"hasPromo":false,"discount":0.35,"date":"09-01-2025","product":{"id":61,"name":"LG W10 Alpha","brand":"LG","color":"Violet","notes":"Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.","type":"Android 9.0"}},
-  {"id":62,"sellerId":13,"category":8,"price":563.56,"hasPromo":true,"discount":0.0,"date":"22-01-2025","product":{"id":62,"name":"ZTE nubia X6","brand":"ZTE","color":"Puce","notes":"Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.","type":"Android 4.3"}},
-  {"id":63,"sellerId":16,"category":8,"price":545.83,"hasPromo":false,"discount":0.24,"date":"19-01-2025","product":{"id":63,"name":"Lenovo Vibe S1 Lite","brand":"Lenovo","color":"Violet","notes":"Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.","type":"Android 5.1"}},
-  {"id":64,"sellerId":30,"category":3,"price":240.96,"hasPromo":true,"discount":0.91,"date":"16-01-2025","product":{"id":64,"name":"Lava Z80","brand":"Lava","color":"Purple","notes":"Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.","type":"Android 7.0"}},
-  {"id":65,"sellerId":4,"category":6,"price":294.38,"hasPromo":false,"discount":0.61,"date":"11-01-2025","product":{"id":65,"name":"Lenovo Vibe P1 Turbo","brand":"Lenovo","color":"Aquamarine","notes":"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.","type":"Android 5.1"}},
-  {"id":66,"sellerId":19,"category":8,"price":77.55,"hasPromo":false,"discount":0.36,"date":"19-01-2025","product":{"id":66,"name":"Siemens S40","brand":"Siemens","color":"Fuscia","notes":"Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.","type":"Feature phone"}},
-  {"id":67,"sellerId":6,"category":7,"price":955.7,"hasPromo":true,"discount":0.24,"date":"14-01-2025","product":{"id":67,"name":"LG KF310","brand":"LG","color":"Maroon","notes":"In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.","type":"Feature phone"}},
-  {"id":68,"sellerId":1,"category":9,"price":840.65,"hasPromo":true,"discount":0.25,"date":"13-01-2025","product":{"id":68,"name":"Coolpad Cool Play 6","brand":"Coolpad","color":"Indigo","notes":"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.","type":"Android 7.1.1, Journey UI"}},
-  {"id":69,"sellerId":27,"category":4,"price":37.58,"hasPromo":true,"discount":0.0,"date":"20-01-2025","product":{"id":69,"name":"Samsung T479 Gravity 3","brand":"Samsung","color":"Pink","notes":"Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.","type":"Feature phone"}},
-  {"id":70,"sellerId":15,"category":4,"price":690.52,"hasPromo":false,"discount":0.3,"date":"12-01-2025","product":{"id":70,"name":"Sony Xperia Z4 Tablet LTE","brand":"Sony","color":"Khaki","notes":"Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.","type":"Android 5.0, 6.0, up to 7.0"}},
-  {"id":71,"sellerId":17,"category":1,"price":400.72,"hasPromo":false,"discount":0.58,"date":"12-01-2025","product":{"id":71,"name":"Vertu Constellation 2006","brand":"Vertu","color":"Violet","notes":"Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.","type":"Feature phone"}},
-  {"id":72,"sellerId":12,"category":3,"price":552.09,"hasPromo":true,"discount":0.94,"date":"13-01-2025","product":{"id":72,"name":"verykool i125","brand":"verykool","color":"Aquamarine","notes":"Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.","type":"Feature phone"}},
-  {"id":73,"sellerId":15,"category":5,"price":31.62,"hasPromo":true,"discount":0.9,"date":"09-01-2025","product":{"id":73,"name":"Xiaomi Mi Mix","brand":"Xiaomi","color":"Maroon","notes":"Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.","type":"Android 6.0, up to 8.0, MIUI 10"}},
-  {"id":74,"sellerId":3,"category":9,"price":534.75,"hasPromo":true,"discount":0.73,"date":"16-01-2025","product":{"id":74,"name":"ZTE Blade Q Mini","brand":"ZTE","color":"Maroon","notes":"Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.","type":"Android 4.2"}},
-  {"id":75,"sellerId":20,"category":6,"price":294.82,"hasPromo":false,"discount":0.39,"date":"18-01-2025","product":{"id":75,"name":"Sony Ericsson W380","brand":"Sony","color":"Maroon","notes":"Sed ante. Vivamus tortor. Duis mattis egestas metus.","type":"Feature phone"}},
-  {"id":76,"sellerId":26,"category":3,"price":957.51,"hasPromo":false,"discount":0.47,"date":"15-01-2025","product":{"id":76,"name":"Sony Ericsson R300 Radio","brand":"Sony","color":"Goldenrod","notes":"Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.","type":"Feature phone"}},
-  {"id":77,"sellerId":28,"category":1,"price":11.1,"hasPromo":true,"discount":0.95,"date":"10-01-2025","product":{"id":77,"name":"LG G3 Stylus","brand":"LG","color":"Aquamarine","notes":"Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.","type":"Android 4.4.2"}},
-  {"id":78,"sellerId":7,"category":3,"price":89.61,"hasPromo":false,"discount":0.79,"date":"10-01-2025","product":{"id":78,"name":"Vodafone 735","brand":"Vodafone","color":"Maroon","notes":"Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.","type":"Feature phone"}},
-  {"id":79,"sellerId":6,"category":4,"price":92.44,"hasPromo":false,"discount":0.6,"date":"17-01-2025","product":{"id":79,"name":"Huawei nova 6 5G","brand":"Huawei","color":"Teal","notes":"Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.","type":"Android 10, EMUI 10"}},
-  {"id":80,"sellerId":1,"category":2,"price":265.65,"hasPromo":false,"discount":0.97,"date":"15-01-2025","product":{"id":80,"name":"LG GB210","brand":"LG","color":"Yellow","notes":"Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.","type":"Feature phone"}},
-  {"id":81,"sellerId":10,"category":7,"price":842.74,"hasPromo":false,"discount":0.97,"date":"07-01-2025","product":{"id":81,"name":"Sony Xperia XZ Premium","brand":"Sony","color":"Blue","notes":"Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.","type":"Android 7.1, up to Android 9.0"}},
-  {"id":82,"sellerId":7,"category":7,"price":907.88,"hasPromo":true,"discount":0.15,"date":"11-01-2025","product":{"id":82,"name":"alcatel OT 332","brand":"alcatel","color":"Violet","notes":"Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.","type":"Feature phone"}},
-  {"id":83,"sellerId":23,"category":9,"price":8.26,"hasPromo":false,"discount":0.7,"date":"09-01-2025","product":{"id":83,"name":"BlackBerry Curve Touch CDMA","brand":"BlackBerry","color":"Goldenrod","notes":"Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.","type":"BlackBerry OS 6.1"}},
-  {"id":84,"sellerId":28,"category":10,"price":260.8,"hasPromo":false,"discount":0.25,"date":"16-01-2025","product":{"id":84,"name":"QMobile Noir i6 Metal HD","brand":"QMobile","color":"Crimson","notes":"In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.","type":"Android 6.0"}},
-  {"id":85,"sellerId":23,"category":9,"price":504.94,"hasPromo":false,"discount":0.7,"date":"16-01-2025","product":{"id":85,"name":"Gionee Elife E6","brand":"Gionee","color":"Pink","notes":"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.","type":"Android 4.2"}},
-  {"id":86,"sellerId":10,"category":4,"price":804.26,"hasPromo":false,"discount":0.61,"date":"15-01-2025","product":{"id":86,"name":"Nokia 801T","brand":"Nokia","color":"Purple","notes":"Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.","type":"Symbian Anna OS"}},
-  {"id":87,"sellerId":15,"category":5,"price":498.25,"hasPromo":true,"discount":0.45,"date":"22-01-2025","product":{"id":87,"name":"Panasonic Eluga A2","brand":"Panasonic","color":"Green","notes":"In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.","type":"Android 5.1, FitHome UI"}},
-  {"id":88,"sellerId":2,"category":5,"price":3.67,"hasPromo":true,"discount":0.73,"date":"08-01-2025","product":{"id":88,"name":"Vodafone 736","brand":"Vodafone","color":"Khaki","notes":"Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.","type":"Feature phone"}},
-  {"id":89,"sellerId":17,"category":4,"price":697.22,"hasPromo":true,"discount":0.11,"date":"18-01-2025","product":{"id":89,"name":"XOLO Q500","brand":"XOLO","color":"Pink","notes":"Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.","type":"Android 4.1"}},
-  {"id":90,"sellerId":9,"category":6,"price":226.71,"hasPromo":false,"discount":0.72,"date":"12-01-2025","product":{"id":90,"name":"BLU Grand Max","brand":"BLU","color":"Puce","notes":"Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.","type":"Android 6.0"}},
-  {"id":91,"sellerId":6,"category":4,"price":24.76,"hasPromo":false,"discount":0.92,"date":"10-01-2025","product":{"id":91,"name":"LG KG920","brand":"LG","color":"Crimson","notes":"Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.","type":"Feature phone"}},
-  {"id":92,"sellerId":7,"category":2,"price":385.22,"hasPromo":false,"discount":0.34,"date":"21-01-2025","product":{"id":92,"name":"Motorola E895","brand":"Motorola","color":"Yellow","notes":"Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.","type":"Linux, JUIX UI"}},
-  {"id":93,"sellerId":23,"category":2,"price":972.84,"hasPromo":true,"discount":0.23,"date":"15-01-2025","product":{"id":93,"name":"LG A180","brand":"LG","color":"Aquamarine","notes":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.","type":"Feature phone"}},
-  {"id":94,"sellerId":22,"category":10,"price":710.85,"hasPromo":true,"discount":0.42,"date":"21-01-2025","product":{"id":94,"name":"Samsung E2370 Xcover","brand":"Samsung","color":"Indigo","notes":"Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.","type":"Feature phone"}},
-  {"id":95,"sellerId":5,"category":9,"price":787.51,"hasPromo":true,"discount":0.69,"date":"07-01-2025","product":{"id":95,"name":"Motorola Fire","brand":"Motorola","color":"Fuscia","notes":"In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.","type":"Android 2.3"}},
-  {"id":96,"sellerId":23,"category":3,"price":326.87,"hasPromo":false,"discount":0.06,"date":"22-01-2025","product":{"id":96,"name":"Haier F1100","brand":"Haier","color":"Orange","notes":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.","type":"Feature phone"}},
-  {"id":97,"sellerId":2,"category":7,"price":331.73,"hasPromo":false,"discount":0.14,"date":"07-01-2025","product":{"id":97,"name":"BLU Life Pure Mini","brand":"BLU","color":"Aquamarine","notes":"In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.","type":"Android 4.2"}},
-  {"id":98,"sellerId":6,"category":4,"price":391.16,"hasPromo":false,"discount":0.68,"date":"18-01-2025","product":{"id":98,"name":"Nokia 6301","brand":"Nokia","color":"Goldenrod","notes":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.","type":"Feature phone"}},
-  {"id":99,"sellerId":30,"category":1,"price":261.57,"hasPromo":false,"discount":0.8,"date":"15-01-2025","product":{"id":99,"name":"Samsung Galaxy A5 (2017)","brand":"Samsung","color":"Orange","notes":"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.","type":"Android 6.0.1, up to Android 8.0"}},
-  {"id":100,"sellerId":14,"category":10,"price":559.03,"hasPromo":false,"discount":0.39,"date":"08-01-2025","product":{"id":100,"name":"Micromax A50 Ninja","brand":"Micromax","color":"Yellow","notes":"Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.","type":"Android 2.3.6"}}]
+[
+  {
+    "id": 1,
+    "sellerId": 26,
+    "category": 2,
+    "price": 693.92,
+    "hasPromo": false,
+    "discount": 0.42,
+    "date": "08-01-2025",
+    "product": {
+      "id": 1,
+      "name": "Motorola DROID X",
+      "brand": "Motorola",
+      "color": "Violet",
+      "notes": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+      "type": "Android 2.1, up to 2.3"
+    }
+  },
+  {
+    "id": 2,
+    "sellerId": 12,
+    "category": 10,
+    "price": 382.07,
+    "hasPromo": false,
+    "discount": 0.52,
+    "date": "22-01-2025",
+    "product": {
+      "id": 2,
+      "name": "Motorola MT810lx",
+      "brand": "Motorola",
+      "color": "Aquamarine",
+      "notes": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+      "type": "Android-based OPhone 2.0"
+    }
+  },
+  {
+    "id": 3,
+    "sellerId": 17,
+    "category": 10,
+    "price": 626.03,
+    "hasPromo": false,
+    "discount": 0.32,
+    "date": "20-01-2025",
+    "product": {
+      "id": 3,
+      "name": "Honor Note 10",
+      "brand": "Honor",
+      "color": "Teal",
+      "notes": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+      "type": "Android 8.1, EMUI 8.2"
+    }
+  },
+  {
+    "id": 4,
+    "sellerId": 20,
+    "category": 8,
+    "price": 787.85,
+    "hasPromo": true,
+    "discount": 0.32,
+    "date": "08-01-2025",
+    "product": {
+      "id": 4,
+      "name": "Motorola Moto G (3rd gen)",
+      "brand": "Motorola",
+      "color": "Orange",
+      "notes": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+      "type": "Android 5.1.1, up to 6.0"
+    }
+  },
+  {
+    "id": 5,
+    "sellerId": 16,
+    "category": 9,
+    "price": 794.89,
+    "hasPromo": true,
+    "discount": 0.45,
+    "date": "22-01-2025",
+    "product": {
+      "id": 5,
+      "name": "Motorola RAZR MAXX",
+      "brand": "Motorola",
+      "color": "Pink",
+      "notes": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+      "type": "Android 2.3.6, up to 4.1.2"
+    }
+  },
+  {
+    "id": 6,
+    "sellerId": 26,
+    "category": 5,
+    "price": 620.84,
+    "hasPromo": true,
+    "discount": 0.44,
+    "date": "16-01-2025",
+    "product": {
+      "id": 6,
+      "name": "Wiko Y60",
+      "brand": "Wiko",
+      "color": "Orange",
+      "notes": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+      "type": "Android 9.0 Pie"
+    }
+  },
+  {
+    "id": 7,
+    "sellerId": 19,
+    "category": 3,
+    "price": 676.23,
+    "hasPromo": true,
+    "discount": 0.68,
+    "date": "20-01-2025",
+    "product": {
+      "id": 7,
+      "name": "verykool s5035 Spear",
+      "brand": "verykool",
+      "color": "Red",
+      "notes": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+      "type": "Android 6.0"
+    }
+  },
+  {
+    "id": 8,
+    "sellerId": 21,
+    "category": 6,
+    "price": 938.45,
+    "hasPromo": false,
+    "discount": 0.49,
+    "date": "09-01-2025",
+    "product": {
+      "id": 8,
+      "name": "Philips T939",
+      "brand": "Philips",
+      "color": "Mauv",
+      "notes": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+      "type": "Android 4.0"
+    }
+  },
+  {
+    "id": 9,
+    "sellerId": 25,
+    "category": 2,
+    "price": 608.96,
+    "hasPromo": true,
+    "discount": 0.03,
+    "date": "09-01-2025",
+    "product": {
+      "id": 9,
+      "name": "Samsung D600",
+      "brand": "Samsung",
+      "color": "Goldenrod",
+      "notes": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 10,
+    "sellerId": 1,
+    "category": 6,
+    "price": 382.56,
+    "hasPromo": true,
+    "discount": 0.75,
+    "date": "22-01-2025",
+    "product": {
+      "id": 10,
+      "name": "Nokia 222 Dual SIM",
+      "brand": "Nokia",
+      "color": "Crimson",
+      "notes": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 11,
+    "sellerId": 8,
+    "category": 7,
+    "price": 417.0,
+    "hasPromo": true,
+    "discount": 0.65,
+    "date": "07-01-2025",
+    "product": {
+      "id": 11,
+      "name": "Samsung SGH-2200",
+      "brand": "Samsung",
+      "color": "Pink",
+      "notes": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 12,
+    "sellerId": 2,
+    "category": 7,
+    "price": 653.75,
+    "hasPromo": true,
+    "discount": 0.9,
+    "date": "08-01-2025",
+    "product": {
+      "id": 12,
+      "name": "Gigabyte GSmart Roma RX",
+      "brand": "Gigabyte",
+      "color": "Turquoise",
+      "notes": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+      "type": "Android 4.4"
+    }
+  },
+  {
+    "id": 13,
+    "sellerId": 2,
+    "category": 2,
+    "price": 143.02,
+    "hasPromo": false,
+    "discount": 0.03,
+    "date": "08-01-2025",
+    "product": {
+      "id": 13,
+      "name": "Nokia 808 PureView",
+      "brand": "Nokia",
+      "color": "Goldenrod",
+      "notes": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+      "type": "Nokia Belle OS"
+    }
+  },
+  {
+    "id": 14,
+    "sellerId": 8,
+    "category": 3,
+    "price": 798.92,
+    "hasPromo": false,
+    "discount": 0.67,
+    "date": "21-01-2025",
+    "product": {
+      "id": 14,
+      "name": "Nokia E73 Mode",
+      "brand": "Nokia",
+      "color": "Blue",
+      "notes": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+      "type": "Symbian OS 9.3, Series 60 v3.2 UI"
+    }
+  },
+  {
+    "id": 15,
+    "sellerId": 4,
+    "category": 4,
+    "price": 842.32,
+    "hasPromo": true,
+    "discount": 0.33,
+    "date": "09-01-2025",
+    "product": {
+      "id": 15,
+      "name": "Sony Ericsson Yendo",
+      "brand": "Sony",
+      "color": "Violet",
+      "notes": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 16,
+    "sellerId": 4,
+    "category": 5,
+    "price": 96.89,
+    "hasPromo": true,
+    "discount": 0.31,
+    "date": "21-01-2025",
+    "product": {
+      "id": 16,
+      "name": "Samsung T249",
+      "brand": "Samsung",
+      "color": "Crimson",
+      "notes": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 17,
+    "sellerId": 7,
+    "category": 2,
+    "price": 581.55,
+    "hasPromo": false,
+    "discount": 0.23,
+    "date": "08-01-2025",
+    "product": {
+      "id": 17,
+      "name": "Motorola Timeport 250",
+      "brand": "Motorola",
+      "color": "Red",
+      "notes": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 18,
+    "sellerId": 26,
+    "category": 8,
+    "price": 915.64,
+    "hasPromo": true,
+    "discount": 0.93,
+    "date": "16-01-2025",
+    "product": {
+      "id": 18,
+      "name": "ZTE nubia Z17 mini",
+      "brand": "ZTE",
+      "color": "Aquamarine",
+      "notes": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+      "type": "Android 6.1, nubia UI 4"
+    }
+  },
+  {
+    "id": 19,
+    "sellerId": 8,
+    "category": 7,
+    "price": 414.49,
+    "hasPromo": false,
+    "discount": 0.93,
+    "date": "08-01-2025",
+    "product": {
+      "id": 19,
+      "name": "Samsung Galaxy Tab 3 10.1 P5210",
+      "brand": "Samsung",
+      "color": "Indigo",
+      "notes": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+      "type": "Android 4.2.2, TouchWiz UI"
+    }
+  },
+  {
+    "id": 20,
+    "sellerId": 12,
+    "category": 8,
+    "price": 709.04,
+    "hasPromo": true,
+    "discount": 0.79,
+    "date": "12-01-2025",
+    "product": {
+      "id": 20,
+      "name": "Motorola DEFY XT XT556",
+      "brand": "Motorola",
+      "color": "Turquoise",
+      "notes": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+      "type": "Android 2.3"
+    }
+  },
+  {
+    "id": 21,
+    "sellerId": 20,
+    "category": 9,
+    "price": 131.06,
+    "hasPromo": false,
+    "discount": 0.75,
+    "date": "10-01-2025",
+    "product": {
+      "id": 21,
+      "name": "alcatel OT-870",
+      "brand": "alcatel",
+      "color": "Red",
+      "notes": "Fusce consequat. Nulla nisl. Nunc nisl.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 22,
+    "sellerId": 23,
+    "category": 6,
+    "price": 240.82,
+    "hasPromo": false,
+    "discount": 0.42,
+    "date": "06-01-2025",
+    "product": {
+      "id": 22,
+      "name": "Icemobile Sol II",
+      "brand": "Icemobile",
+      "color": "Goldenrod",
+      "notes": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 23,
+    "sellerId": 19,
+    "category": 1,
+    "price": 207.8,
+    "hasPromo": false,
+    "discount": 0.54,
+    "date": "11-01-2025",
+    "product": {
+      "id": 23,
+      "name": "Gigabyte GSmart G1315 Skate",
+      "brand": "Gigabyte",
+      "color": "Yellow",
+      "notes": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+      "type": "Android 2.2"
+    }
+  },
+  {
+    "id": 24,
+    "sellerId": 1,
+    "category": 3,
+    "price": 633.25,
+    "hasPromo": true,
+    "discount": 0.03,
+    "date": "07-01-2025",
+    "product": {
+      "id": 24,
+      "name": "LG KT770",
+      "brand": "LG",
+      "color": "Maroon",
+      "notes": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+      "type": "Symbian OS 9.3 Series60 rel. 3.2.3"
+    }
+  },
+  {
+    "id": 25,
+    "sellerId": 17,
+    "category": 7,
+    "price": 372.73,
+    "hasPromo": false,
+    "discount": 0.14,
+    "date": "20-01-2025",
+    "product": {
+      "id": 25,
+      "name": "Siemens AF51",
+      "brand": "Siemens",
+      "color": "Puce",
+      "notes": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 26,
+    "sellerId": 15,
+    "category": 9,
+    "price": 291.57,
+    "hasPromo": false,
+    "discount": 0.83,
+    "date": "10-01-2025",
+    "product": {
+      "id": 26,
+      "name": "Motorola A668",
+      "brand": "Motorola",
+      "color": "Turquoise",
+      "notes": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 27,
+    "sellerId": 16,
+    "category": 8,
+    "price": 4.7,
+    "hasPromo": false,
+    "discount": 0.67,
+    "date": "12-01-2025",
+    "product": {
+      "id": 27,
+      "name": "Spice Mi-285 Stellar",
+      "brand": "Spice",
+      "color": "Indigo",
+      "notes": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+      "type": "Android 2.3"
+    }
+  },
+  {
+    "id": 28,
+    "sellerId": 16,
+    "category": 5,
+    "price": 981.31,
+    "hasPromo": true,
+    "discount": 0.86,
+    "date": "06-01-2025",
+    "product": {
+      "id": 28,
+      "name": "alcatel OT-810D",
+      "brand": "alcatel",
+      "color": "Purple",
+      "notes": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 29,
+    "sellerId": 25,
+    "category": 8,
+    "price": 219.75,
+    "hasPromo": false,
+    "discount": 0.83,
+    "date": "14-01-2025",
+    "product": {
+      "id": 29,
+      "name": "Oppo A37",
+      "brand": "Oppo",
+      "color": "Maroon",
+      "notes": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "type": "Android 5.1, ColorOS 3"
+    }
+  },
+  {
+    "id": 30,
+    "sellerId": 21,
+    "category": 6,
+    "price": 718.72,
+    "hasPromo": true,
+    "discount": 0.61,
+    "date": "10-01-2025",
+    "product": {
+      "id": 30,
+      "name": "Plum Slick",
+      "brand": "Plum",
+      "color": "Maroon",
+      "notes": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 31,
+    "sellerId": 11,
+    "category": 4,
+    "price": 446.54,
+    "hasPromo": true,
+    "discount": 0.2,
+    "date": "17-01-2025",
+    "product": {
+      "id": 31,
+      "name": "Panasonic GD70",
+      "brand": "Panasonic",
+      "color": "Indigo",
+      "notes": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 32,
+    "sellerId": 27,
+    "category": 7,
+    "price": 223.37,
+    "hasPromo": true,
+    "discount": 0.03,
+    "date": "06-01-2025",
+    "product": {
+      "id": 32,
+      "name": "Posh Equal Pro LTE L700",
+      "brand": "Posh",
+      "color": "Violet",
+      "notes": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+      "type": "Android 5.1"
+    }
+  },
+  {
+    "id": 33,
+    "sellerId": 4,
+    "category": 7,
+    "price": 798.13,
+    "hasPromo": false,
+    "discount": 0.06,
+    "date": "14-01-2025",
+    "product": {
+      "id": 33,
+      "name": "HTC Desire 820G+ dual sim",
+      "brand": "HTC",
+      "color": "Yellow",
+      "notes": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "type": "Android 4.4.2, Sense UI 6"
+    }
+  },
+  {
+    "id": 34,
+    "sellerId": 16,
+    "category": 9,
+    "price": 445.72,
+    "hasPromo": false,
+    "discount": 0.47,
+    "date": "12-01-2025",
+    "product": {
+      "id": 34,
+      "name": "ZTE Grand X View 2",
+      "brand": "ZTE",
+      "color": "Maroon",
+      "notes": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "type": "Android 7.1.1"
+    }
+  },
+  {
+    "id": 35,
+    "sellerId": 7,
+    "category": 5,
+    "price": 940.82,
+    "hasPromo": false,
+    "discount": 0.54,
+    "date": "18-01-2025",
+    "product": {
+      "id": 35,
+      "name": "Prestigio MultiPad 7.0 Pro",
+      "brand": "Prestigio",
+      "color": "Purple",
+      "notes": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+      "type": "Android 4.0"
+    }
+  },
+  {
+    "id": 36,
+    "sellerId": 19,
+    "category": 2,
+    "price": 936.02,
+    "hasPromo": false,
+    "discount": 0.16,
+    "date": "19-01-2025",
+    "product": {
+      "id": 36,
+      "name": "Samsung L170",
+      "brand": "Samsung",
+      "color": "Pink",
+      "notes": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 37,
+    "sellerId": 15,
+    "category": 1,
+    "price": 192.4,
+    "hasPromo": false,
+    "discount": 0.73,
+    "date": "15-01-2025",
+    "product": {
+      "id": 37,
+      "name": "Samsung Gravity TXT T379",
+      "brand": "Samsung",
+      "color": "Green",
+      "notes": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 38,
+    "sellerId": 29,
+    "category": 7,
+    "price": 294.56,
+    "hasPromo": false,
+    "discount": 0.17,
+    "date": "18-01-2025",
+    "product": {
+      "id": 38,
+      "name": "Samsung U100",
+      "brand": "Samsung",
+      "color": "Orange",
+      "notes": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 39,
+    "sellerId": 6,
+    "category": 3,
+    "price": 175.65,
+    "hasPromo": false,
+    "discount": 0.28,
+    "date": "16-01-2025",
+    "product": {
+      "id": 39,
+      "name": "Samsung Galaxy J Max",
+      "brand": "Samsung",
+      "color": "Teal",
+      "notes": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+      "type": "Android 5.1"
+    }
+  },
+  {
+    "id": 40,
+    "sellerId": 4,
+    "category": 9,
+    "price": 734.37,
+    "hasPromo": false,
+    "discount": 0.64,
+    "date": "09-01-2025",
+    "product": {
+      "id": 40,
+      "name": "Amoi A90B",
+      "brand": "Amoi",
+      "color": "Puce",
+      "notes": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 41,
+    "sellerId": 5,
+    "category": 5,
+    "price": 873.8,
+    "hasPromo": false,
+    "discount": 0.02,
+    "date": "15-01-2025",
+    "product": {
+      "id": 41,
+      "name": "Sony Xperia Z4v",
+      "brand": "Sony",
+      "color": "Fuscia",
+      "notes": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "type": "Android 5.0"
+    }
+  },
+  {
+    "id": 42,
+    "sellerId": 12,
+    "category": 2,
+    "price": 465.82,
+    "hasPromo": true,
+    "discount": 0.41,
+    "date": "13-01-2025",
+    "product": {
+      "id": 42,
+      "name": "Samsung Galaxy Tab 4 8.0 (2015)",
+      "brand": "Samsung",
+      "color": "Indigo",
+      "notes": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+      "type": "Android 4.4.4"
+    }
+  },
+  {
+    "id": 43,
+    "sellerId": 10,
+    "category": 5,
+    "price": 929.26,
+    "hasPromo": true,
+    "discount": 0.4,
+    "date": "19-01-2025",
+    "product": {
+      "id": 43,
+      "name": "HP Slate7 Plus",
+      "brand": "HP",
+      "color": "Khaki",
+      "notes": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+      "type": "Android 4.2.2"
+    }
+  },
+  {
+    "id": 44,
+    "sellerId": 16,
+    "category": 4,
+    "price": 415.8,
+    "hasPromo": false,
+    "discount": 0.49,
+    "date": "17-01-2025",
+    "product": {
+      "id": 44,
+      "name": "LG G5",
+      "brand": "LG",
+      "color": "Goldenrod",
+      "notes": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+      "type": "Android 6.0.1, up to Android 8.0, LG UX 5 UI"
+    }
+  },
+  {
+    "id": 45,
+    "sellerId": 19,
+    "category": 5,
+    "price": 312.6,
+    "hasPromo": true,
+    "discount": 0.62,
+    "date": "10-01-2025",
+    "product": {
+      "id": 45,
+      "name": "Huawei Enjoy 5s",
+      "brand": "Huawei",
+      "color": "Blue",
+      "notes": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+      "type": "Android 5.1.1, EMUI 3.1 Lite"
+    }
+  },
+  {
+    "id": 46,
+    "sellerId": 26,
+    "category": 8,
+    "price": 517.25,
+    "hasPromo": false,
+    "discount": 0.38,
+    "date": "16-01-2025",
+    "product": {
+      "id": 46,
+      "name": "Lava Iris 402e",
+      "brand": "Lava",
+      "color": "Turquoise",
+      "notes": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+      "type": "Android 4.2.2"
+    }
+  },
+  {
+    "id": 47,
+    "sellerId": 19,
+    "category": 8,
+    "price": 341.08,
+    "hasPromo": false,
+    "discount": 0.08,
+    "date": "12-01-2025",
+    "product": {
+      "id": 47,
+      "name": "Samsung E251",
+      "brand": "Samsung",
+      "color": "Puce",
+      "notes": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 48,
+    "sellerId": 3,
+    "category": 8,
+    "price": 305.71,
+    "hasPromo": true,
+    "discount": 0.47,
+    "date": "12-01-2025",
+    "product": {
+      "id": 48,
+      "name": "verykool s758",
+      "brand": "verykool",
+      "color": "Fuscia",
+      "notes": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+      "type": "Android 4.0"
+    }
+  },
+  {
+    "id": 49,
+    "sellerId": 9,
+    "category": 3,
+    "price": 549.31,
+    "hasPromo": false,
+    "discount": 0.37,
+    "date": "16-01-2025",
+    "product": {
+      "id": 49,
+      "name": "LG KC910i Renoir",
+      "brand": "LG",
+      "color": "Red",
+      "notes": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 50,
+    "sellerId": 27,
+    "category": 2,
+    "price": 20.21,
+    "hasPromo": true,
+    "discount": 0.67,
+    "date": "19-01-2025",
+    "product": {
+      "id": 50,
+      "name": "ZTE Light Tab 3 V9S",
+      "brand": "ZTE",
+      "color": "Orange",
+      "notes": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+      "type": "Android 3.2"
+    }
+  },
+  {
+    "id": 51,
+    "sellerId": 15,
+    "category": 3,
+    "price": 997.88,
+    "hasPromo": false,
+    "discount": 0.62,
+    "date": "17-01-2025",
+    "product": {
+      "id": 51,
+      "name": "Spice Stellar 439 (Mi-439)",
+      "brand": "Spice",
+      "color": "Aquamarine",
+      "notes": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "type": "Android 4.4.2"
+    }
+  },
+  {
+    "id": 52,
+    "sellerId": 28,
+    "category": 8,
+    "price": 603.02,
+    "hasPromo": false,
+    "discount": 0.92,
+    "date": "08-01-2025",
+    "product": {
+      "id": 52,
+      "name": "Honor 8A Prime",
+      "brand": "Honor",
+      "color": "Red",
+      "notes": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+      "type": "Android 9.0, EMUI 9"
+    }
+  },
+  {
+    "id": 53,
+    "sellerId": 11,
+    "category": 3,
+    "price": 340.65,
+    "hasPromo": true,
+    "discount": 0.82,
+    "date": "20-01-2025",
+    "product": {
+      "id": 53,
+      "name": "ZTE Iconic Phablet",
+      "brand": "ZTE",
+      "color": "Puce",
+      "notes": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "type": "Android 4.3"
+    }
+  },
+  {
+    "id": 54,
+    "sellerId": 8,
+    "category": 3,
+    "price": 150.04,
+    "hasPromo": false,
+    "discount": 0.69,
+    "date": "08-01-2025",
+    "product": {
+      "id": 54,
+      "name": "Lenovo K6 Note",
+      "brand": "Lenovo",
+      "color": "Purple",
+      "notes": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "type": "Android 6.0"
+    }
+  },
+  {
+    "id": 55,
+    "sellerId": 25,
+    "category": 6,
+    "price": 284.39,
+    "hasPromo": false,
+    "discount": 0.81,
+    "date": "22-01-2025",
+    "product": {
+      "id": 55,
+      "name": "Samsung Star 3 Duos S5222",
+      "brand": "Samsung",
+      "color": "Blue",
+      "notes": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 56,
+    "sellerId": 19,
+    "category": 9,
+    "price": 624.84,
+    "hasPromo": false,
+    "discount": 0.59,
+    "date": "22-01-2025",
+    "product": {
+      "id": 56,
+      "name": "Sony Xperia Z3 Tablet Compact",
+      "brand": "Sony",
+      "color": "Indigo",
+      "notes": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
+      "type": "Android 4.4.2, up to 6.0"
+    }
+  },
+  {
+    "id": 57,
+    "sellerId": 27,
+    "category": 5,
+    "price": 589.81,
+    "hasPromo": true,
+    "discount": 0.42,
+    "date": "19-01-2025",
+    "product": {
+      "id": 57,
+      "name": "Ericsson T36",
+      "brand": "Ericsson",
+      "color": "Green",
+      "notes": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 58,
+    "sellerId": 7,
+    "category": 9,
+    "price": 356.96,
+    "hasPromo": true,
+    "discount": 0.07,
+    "date": "14-01-2025",
+    "product": {
+      "id": 58,
+      "name": "Sagem my300X",
+      "brand": "Sagem",
+      "color": "Teal",
+      "notes": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 59,
+    "sellerId": 12,
+    "category": 8,
+    "price": 305.38,
+    "hasPromo": false,
+    "discount": 0.06,
+    "date": "18-01-2025",
+    "product": {
+      "id": 59,
+      "name": "Celkon A355",
+      "brand": "Celkon",
+      "color": "Maroon",
+      "notes": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+      "type": "Android 4.4.2"
+    }
+  },
+  {
+    "id": 60,
+    "sellerId": 9,
+    "category": 6,
+    "price": 29.24,
+    "hasPromo": true,
+    "discount": 0.53,
+    "date": "13-01-2025",
+    "product": {
+      "id": 60,
+      "name": "Nokia 3208c",
+      "brand": "Nokia",
+      "color": "Yellow",
+      "notes": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 61,
+    "sellerId": 12,
+    "category": 8,
+    "price": 623.66,
+    "hasPromo": false,
+    "discount": 0.35,
+    "date": "09-01-2025",
+    "product": {
+      "id": 61,
+      "name": "LG W10 Alpha",
+      "brand": "LG",
+      "color": "Violet",
+      "notes": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+      "type": "Android 9.0"
+    }
+  },
+  {
+    "id": 62,
+    "sellerId": 13,
+    "category": 8,
+    "price": 563.56,
+    "hasPromo": true,
+    "discount": 0.0,
+    "date": "22-01-2025",
+    "product": {
+      "id": 62,
+      "name": "ZTE nubia X6",
+      "brand": "ZTE",
+      "color": "Puce",
+      "notes": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+      "type": "Android 4.3"
+    }
+  },
+  {
+    "id": 63,
+    "sellerId": 16,
+    "category": 8,
+    "price": 545.83,
+    "hasPromo": false,
+    "discount": 0.24,
+    "date": "19-01-2025",
+    "product": {
+      "id": 63,
+      "name": "Lenovo Vibe S1 Lite",
+      "brand": "Lenovo",
+      "color": "Violet",
+      "notes": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+      "type": "Android 5.1"
+    }
+  },
+  {
+    "id": 64,
+    "sellerId": 30,
+    "category": 3,
+    "price": 240.96,
+    "hasPromo": true,
+    "discount": 0.91,
+    "date": "16-01-2025",
+    "product": {
+      "id": 64,
+      "name": "Lava Z80",
+      "brand": "Lava",
+      "color": "Purple",
+      "notes": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+      "type": "Android 7.0"
+    }
+  },
+  {
+    "id": 65,
+    "sellerId": 4,
+    "category": 6,
+    "price": 294.38,
+    "hasPromo": false,
+    "discount": 0.61,
+    "date": "11-01-2025",
+    "product": {
+      "id": 65,
+      "name": "Lenovo Vibe P1 Turbo",
+      "brand": "Lenovo",
+      "color": "Aquamarine",
+      "notes": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+      "type": "Android 5.1"
+    }
+  },
+  {
+    "id": 66,
+    "sellerId": 19,
+    "category": 8,
+    "price": 77.55,
+    "hasPromo": false,
+    "discount": 0.36,
+    "date": "19-01-2025",
+    "product": {
+      "id": 66,
+      "name": "Siemens S40",
+      "brand": "Siemens",
+      "color": "Fuscia",
+      "notes": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 67,
+    "sellerId": 6,
+    "category": 7,
+    "price": 955.7,
+    "hasPromo": true,
+    "discount": 0.24,
+    "date": "14-01-2025",
+    "product": {
+      "id": 67,
+      "name": "LG KF310",
+      "brand": "LG",
+      "color": "Maroon",
+      "notes": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 68,
+    "sellerId": 1,
+    "category": 9,
+    "price": 840.65,
+    "hasPromo": true,
+    "discount": 0.25,
+    "date": "13-01-2025",
+    "product": {
+      "id": 68,
+      "name": "Coolpad Cool Play 6",
+      "brand": "Coolpad",
+      "color": "Indigo",
+      "notes": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+      "type": "Android 7.1.1, Journey UI"
+    }
+  },
+  {
+    "id": 69,
+    "sellerId": 27,
+    "category": 4,
+    "price": 37.58,
+    "hasPromo": true,
+    "discount": 0.0,
+    "date": "20-01-2025",
+    "product": {
+      "id": 69,
+      "name": "Samsung T479 Gravity 3",
+      "brand": "Samsung",
+      "color": "Pink",
+      "notes": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 70,
+    "sellerId": 15,
+    "category": 4,
+    "price": 690.52,
+    "hasPromo": false,
+    "discount": 0.3,
+    "date": "12-01-2025",
+    "product": {
+      "id": 70,
+      "name": "Sony Xperia Z4 Tablet LTE",
+      "brand": "Sony",
+      "color": "Khaki",
+      "notes": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "type": "Android 5.0, 6.0, up to 7.0"
+    }
+  },
+  {
+    "id": 71,
+    "sellerId": 17,
+    "category": 1,
+    "price": 400.72,
+    "hasPromo": false,
+    "discount": 0.58,
+    "date": "12-01-2025",
+    "product": {
+      "id": 71,
+      "name": "Vertu Constellation 2006",
+      "brand": "Vertu",
+      "color": "Violet",
+      "notes": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 72,
+    "sellerId": 12,
+    "category": 3,
+    "price": 552.09,
+    "hasPromo": true,
+    "discount": 0.94,
+    "date": "13-01-2025",
+    "product": {
+      "id": 72,
+      "name": "verykool i125",
+      "brand": "verykool",
+      "color": "Aquamarine",
+      "notes": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 73,
+    "sellerId": 15,
+    "category": 5,
+    "price": 31.62,
+    "hasPromo": true,
+    "discount": 0.9,
+    "date": "09-01-2025",
+    "product": {
+      "id": 73,
+      "name": "Xiaomi Mi Mix",
+      "brand": "Xiaomi",
+      "color": "Maroon",
+      "notes": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "type": "Android 6.0, up to 8.0, MIUI 10"
+    }
+  },
+  {
+    "id": 74,
+    "sellerId": 3,
+    "category": 9,
+    "price": 534.75,
+    "hasPromo": true,
+    "discount": 0.73,
+    "date": "16-01-2025",
+    "product": {
+      "id": 74,
+      "name": "ZTE Blade Q Mini",
+      "brand": "ZTE",
+      "color": "Maroon",
+      "notes": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "type": "Android 4.2"
+    }
+  },
+  {
+    "id": 75,
+    "sellerId": 20,
+    "category": 6,
+    "price": 294.82,
+    "hasPromo": false,
+    "discount": 0.39,
+    "date": "18-01-2025",
+    "product": {
+      "id": 75,
+      "name": "Sony Ericsson W380",
+      "brand": "Sony",
+      "color": "Maroon",
+      "notes": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 76,
+    "sellerId": 26,
+    "category": 3,
+    "price": 957.51,
+    "hasPromo": false,
+    "discount": 0.47,
+    "date": "15-01-2025",
+    "product": {
+      "id": 76,
+      "name": "Sony Ericsson R300 Radio",
+      "brand": "Sony",
+      "color": "Goldenrod",
+      "notes": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 77,
+    "sellerId": 28,
+    "category": 1,
+    "price": 11.1,
+    "hasPromo": true,
+    "discount": 0.95,
+    "date": "10-01-2025",
+    "product": {
+      "id": 77,
+      "name": "LG G3 Stylus",
+      "brand": "LG",
+      "color": "Aquamarine",
+      "notes": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+      "type": "Android 4.4.2"
+    }
+  },
+  {
+    "id": 78,
+    "sellerId": 7,
+    "category": 3,
+    "price": 89.61,
+    "hasPromo": false,
+    "discount": 0.79,
+    "date": "10-01-2025",
+    "product": {
+      "id": 78,
+      "name": "Vodafone 735",
+      "brand": "Vodafone",
+      "color": "Maroon",
+      "notes": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 79,
+    "sellerId": 6,
+    "category": 4,
+    "price": 92.44,
+    "hasPromo": false,
+    "discount": 0.6,
+    "date": "17-01-2025",
+    "product": {
+      "id": 79,
+      "name": "Huawei nova 6 5G",
+      "brand": "Huawei",
+      "color": "Teal",
+      "notes": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+      "type": "Android 10, EMUI 10"
+    }
+  },
+  {
+    "id": 80,
+    "sellerId": 1,
+    "category": 2,
+    "price": 265.65,
+    "hasPromo": false,
+    "discount": 0.97,
+    "date": "15-01-2025",
+    "product": {
+      "id": 80,
+      "name": "LG GB210",
+      "brand": "LG",
+      "color": "Yellow",
+      "notes": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 81,
+    "sellerId": 10,
+    "category": 7,
+    "price": 842.74,
+    "hasPromo": false,
+    "discount": 0.97,
+    "date": "07-01-2025",
+    "product": {
+      "id": 81,
+      "name": "Sony Xperia XZ Premium",
+      "brand": "Sony",
+      "color": "Blue",
+      "notes": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+      "type": "Android 7.1, up to Android 9.0"
+    }
+  },
+  {
+    "id": 82,
+    "sellerId": 7,
+    "category": 7,
+    "price": 907.88,
+    "hasPromo": true,
+    "discount": 0.15,
+    "date": "11-01-2025",
+    "product": {
+      "id": 82,
+      "name": "alcatel OT 332",
+      "brand": "alcatel",
+      "color": "Violet",
+      "notes": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 83,
+    "sellerId": 23,
+    "category": 9,
+    "price": 8.26,
+    "hasPromo": false,
+    "discount": 0.7,
+    "date": "09-01-2025",
+    "product": {
+      "id": 83,
+      "name": "BlackBerry Curve Touch CDMA",
+      "brand": "BlackBerry",
+      "color": "Goldenrod",
+      "notes": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
+      "type": "BlackBerry OS 6.1"
+    }
+  },
+  {
+    "id": 84,
+    "sellerId": 28,
+    "category": 10,
+    "price": 260.8,
+    "hasPromo": false,
+    "discount": 0.25,
+    "date": "16-01-2025",
+    "product": {
+      "id": 84,
+      "name": "QMobile Noir i6 Metal HD",
+      "brand": "QMobile",
+      "color": "Crimson",
+      "notes": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+      "type": "Android 6.0"
+    }
+  },
+  {
+    "id": 85,
+    "sellerId": 23,
+    "category": 9,
+    "price": 504.94,
+    "hasPromo": false,
+    "discount": 0.7,
+    "date": "16-01-2025",
+    "product": {
+      "id": 85,
+      "name": "Gionee Elife E6",
+      "brand": "Gionee",
+      "color": "Pink",
+      "notes": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+      "type": "Android 4.2"
+    }
+  },
+  {
+    "id": 86,
+    "sellerId": 10,
+    "category": 4,
+    "price": 804.26,
+    "hasPromo": false,
+    "discount": 0.61,
+    "date": "15-01-2025",
+    "product": {
+      "id": 86,
+      "name": "Nokia 801T",
+      "brand": "Nokia",
+      "color": "Purple",
+      "notes": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+      "type": "Symbian Anna OS"
+    }
+  },
+  {
+    "id": 87,
+    "sellerId": 15,
+    "category": 5,
+    "price": 498.25,
+    "hasPromo": true,
+    "discount": 0.45,
+    "date": "22-01-2025",
+    "product": {
+      "id": 87,
+      "name": "Panasonic Eluga A2",
+      "brand": "Panasonic",
+      "color": "Green",
+      "notes": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+      "type": "Android 5.1, FitHome UI"
+    }
+  },
+  {
+    "id": 88,
+    "sellerId": 2,
+    "category": 5,
+    "price": 3.67,
+    "hasPromo": true,
+    "discount": 0.73,
+    "date": "08-01-2025",
+    "product": {
+      "id": 88,
+      "name": "Vodafone 736",
+      "brand": "Vodafone",
+      "color": "Khaki",
+      "notes": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 89,
+    "sellerId": 17,
+    "category": 4,
+    "price": 697.22,
+    "hasPromo": true,
+    "discount": 0.11,
+    "date": "18-01-2025",
+    "product": {
+      "id": 89,
+      "name": "XOLO Q500",
+      "brand": "XOLO",
+      "color": "Pink",
+      "notes": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "type": "Android 4.1"
+    }
+  },
+  {
+    "id": 90,
+    "sellerId": 9,
+    "category": 6,
+    "price": 226.71,
+    "hasPromo": false,
+    "discount": 0.72,
+    "date": "12-01-2025",
+    "product": {
+      "id": 90,
+      "name": "BLU Grand Max",
+      "brand": "BLU",
+      "color": "Puce",
+      "notes": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+      "type": "Android 6.0"
+    }
+  },
+  {
+    "id": 91,
+    "sellerId": 6,
+    "category": 4,
+    "price": 24.76,
+    "hasPromo": false,
+    "discount": 0.92,
+    "date": "10-01-2025",
+    "product": {
+      "id": 91,
+      "name": "LG KG920",
+      "brand": "LG",
+      "color": "Crimson",
+      "notes": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 92,
+    "sellerId": 7,
+    "category": 2,
+    "price": 385.22,
+    "hasPromo": false,
+    "discount": 0.34,
+    "date": "21-01-2025",
+    "product": {
+      "id": 92,
+      "name": "Motorola E895",
+      "brand": "Motorola",
+      "color": "Yellow",
+      "notes": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+      "type": "Linux, JUIX UI"
+    }
+  },
+  {
+    "id": 93,
+    "sellerId": 23,
+    "category": 2,
+    "price": 972.84,
+    "hasPromo": true,
+    "discount": 0.23,
+    "date": "15-01-2025",
+    "product": {
+      "id": 93,
+      "name": "LG A180",
+      "brand": "LG",
+      "color": "Aquamarine",
+      "notes": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 94,
+    "sellerId": 22,
+    "category": 10,
+    "price": 710.85,
+    "hasPromo": true,
+    "discount": 0.42,
+    "date": "21-01-2025",
+    "product": {
+      "id": 94,
+      "name": "Samsung E2370 Xcover",
+      "brand": "Samsung",
+      "color": "Indigo",
+      "notes": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 95,
+    "sellerId": 5,
+    "category": 9,
+    "price": 787.51,
+    "hasPromo": true,
+    "discount": 0.69,
+    "date": "07-01-2025",
+    "product": {
+      "id": 95,
+      "name": "Motorola Fire",
+      "brand": "Motorola",
+      "color": "Fuscia",
+      "notes": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+      "type": "Android 2.3"
+    }
+  },
+  {
+    "id": 96,
+    "sellerId": 23,
+    "category": 3,
+    "price": 326.87,
+    "hasPromo": false,
+    "discount": 0.06,
+    "date": "22-01-2025",
+    "product": {
+      "id": 96,
+      "name": "Haier F1100",
+      "brand": "Haier",
+      "color": "Orange",
+      "notes": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 97,
+    "sellerId": 2,
+    "category": 7,
+    "price": 331.73,
+    "hasPromo": false,
+    "discount": 0.14,
+    "date": "07-01-2025",
+    "product": {
+      "id": 97,
+      "name": "BLU Life Pure Mini",
+      "brand": "BLU",
+      "color": "Aquamarine",
+      "notes": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+      "type": "Android 4.2"
+    }
+  },
+  {
+    "id": 98,
+    "sellerId": 6,
+    "category": 4,
+    "price": 391.16,
+    "hasPromo": false,
+    "discount": 0.68,
+    "date": "18-01-2025",
+    "product": {
+      "id": 98,
+      "name": "Nokia 6301",
+      "brand": "Nokia",
+      "color": "Goldenrod",
+      "notes": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+      "type": "Feature phone"
+    }
+  },
+  {
+    "id": 99,
+    "sellerId": 30,
+    "category": 1,
+    "price": 261.57,
+    "hasPromo": false,
+    "discount": 0.8,
+    "date": "15-01-2025",
+    "product": {
+      "id": 99,
+      "name": "Samsung Galaxy A5 (2017)",
+      "brand": "Samsung",
+      "color": "Orange",
+      "notes": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+      "type": "Android 6.0.1, up to Android 8.0"
+    }
+  },
+  {
+    "id": 100,
+    "sellerId": 14,
+    "category": 10,
+    "price": 559.03,
+    "hasPromo": false,
+    "discount": 0.39,
+    "date": "08-01-2025",
+    "product": {
+      "id": 100,
+      "name": "Micromax A50 Ninja",
+      "brand": "Micromax",
+      "color": "Yellow",
+      "notes": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+      "type": "Android 2.3.6"
+    }
+  }
+]

@@ -6,10 +6,11 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
 public record CreatePostRequestDTO(
-        @Id Long userId,
-        @NotNull
-		String date,
-        @Valid ProductDTO product,
-        @Positive Integer category,
-        @Positive Double price
-) {}
+    @Id Long userId,
+    @NotNull
+    String date,
+    @Valid ProductDTO product,
+    @Positive Integer category,
+    @Positive Double price
+) {
+}

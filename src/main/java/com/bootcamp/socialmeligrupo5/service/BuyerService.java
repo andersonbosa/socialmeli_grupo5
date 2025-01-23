@@ -34,8 +34,8 @@ public class BuyerService {
         Buyer buyer = findBuyer(userId);
 
         List<UserResponseDTO> following =
-                buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName()))
-                        .toList();
+            buyer.getFollowing().stream().map(b -> new UserResponseDTO(b.getId(), b.getName()))
+                .toList();
 
         if (order != null) {
             following = UserUtil.listUsersWithOrder(following, order);
@@ -62,9 +62,9 @@ public class BuyerService {
 
     private void isFollower(Buyer buyer, Seller seller) {
         seller.getFollowers().stream()
-                .filter(f -> f.getId().equals(buyer.getId()))
-                .findFirst()
-                .orElseThrow(() -> new NotFoundException("O comprador enviado não é um seguidor do vendedor enviado!"));
+            .filter(f -> f.getId().equals(buyer.getId()))
+            .findFirst()
+            .orElseThrow(() -> new NotFoundException("O comprador enviado não é um seguidor do vendedor enviado!"));
     }
 
 }

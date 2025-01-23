@@ -19,8 +19,8 @@ public class HandlerException {
     }
 
     @ExceptionHandler(
-            {BadRequestException.class, ConstraintViolationException.class,
-                    MethodArgumentTypeMismatchException.class}
+        {BadRequestException.class, ConstraintViolationException.class,
+            MethodArgumentTypeMismatchException.class}
     )
     public ResponseEntity<ExceptionDTO> badRequest(Exception ex) {
         ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
@@ -29,7 +29,7 @@ public class HandlerException {
 
     @ExceptionHandler({MethodArgumentNotValidException.class})
     public ResponseEntity<ExceptionDTO> handleValidationExceptions(
-            MethodArgumentNotValidException ex
+        MethodArgumentNotValidException ex
     ) {
 
         FieldError firstError = (FieldError) ex.getBindingResult().getAllErrors().getFirst();

@@ -25,8 +25,8 @@ public class UserController {
 
     @PostMapping("/{userId}/follow/{userIdToFollow}")
     public ResponseEntity<?> followSeller(
-            @PathVariable @Id Long userId,
-            @PathVariable @Id Long userIdToFollow
+        @PathVariable @Id Long userId,
+        @PathVariable @Id Long userIdToFollow
     ) {
         buyerService.followSeller(userId, userIdToFollow);
         return ResponseEntity.ok().build();
@@ -34,7 +34,7 @@ public class UserController {
 
     @GetMapping("/{userId}/followers/count")
     public ResponseEntity<FollowersCountResponseDTO> followersCount(
-            @PathVariable @Id Long userId
+        @PathVariable @Id Long userId
     ) {
         return ResponseEntity.ok().body(sellerService.followersCount(userId));
     }
@@ -49,16 +49,16 @@ public class UserController {
 
     @GetMapping("/{userId}/followed/list")
     public ResponseEntity<BuyerFollowingResponseDTO> buyerFollowing(
-            @PathVariable @Id Long userId,
-            @RequestParam(required = false) String order
+        @PathVariable @Id Long userId,
+        @RequestParam(required = false) String order
     ) {
         return ResponseEntity.ok().body(buyerService.buyerFollowing(userId, order));
     }
 
     @GetMapping("/{userId}/unfollow/{userIdToUnfollow}")
     public ResponseEntity<?> unfollowSeller(
-            @PathVariable @Id Long userId,
-            @PathVariable @Id Long userIdToUnfollow
+        @PathVariable @Id Long userId,
+        @PathVariable @Id Long userIdToUnfollow
     ) {
         buyerService.unfollowSeller(userId, userIdToUnfollow);
         return ResponseEntity.ok().build();

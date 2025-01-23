@@ -11,7 +11,7 @@ public class UserUtil {
     private static final List<String> VALID_ORDERS = List.of("name_asc", "name_desc");
 
     public static List<UserResponseDTO> listUsersWithOrder(
-            List<UserResponseDTO> users, String order) {
+        List<UserResponseDTO> users, String order) {
 
         validateOrder(order);
         Comparator<UserResponseDTO> comparator = Comparator.comparing(UserResponseDTO::userName);
