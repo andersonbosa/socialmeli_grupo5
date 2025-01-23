@@ -44,13 +44,27 @@ public class BuyerService {
         return new BuyerFollowingResponseDTO(buyer.getId(), buyer.getName(), following);
     }
 
-
     private Buyer findBuyer(Long userId) {
         Buyer buyer = buyerRepository.findById(userId);
         if (buyer == null) {
             throw new NotFoundException("O comprador enviado não foi localizado!");
         }
         return buyer;
+    }
+
+    public void unfollowSeller(Long userId, Long userIdToUnfollow) {
+        Buyer buyer = findBuyer(userId);
+        Seller seller = sellerService.findSeller(userIdToUnfollow);
+        isFollower(buyer, seller);
+        buyer.unfollow(seller);
+        seller.removeFollower(buyer);
+    }
+
+    private void isFollower(Buyer buyer, Seller seller) {
+        seller.getFollowers().stream()
+                .filter(f -> f.getId().equals(buyer.getId()))
+                .findFirst()
+                .orElseThrow(() -> new NotFoundException("O comprador enviado não é um seguidor do vendedor enviado!"));
     }
 
 }

@@ -4,6 +4,7 @@ import com.bootcamp.socialmeligrupo5.dto.*;
 import com.bootcamp.socialmeligrupo5.entity.Post;
 import com.bootcamp.socialmeligrupo5.entity.Product;
 import com.bootcamp.socialmeligrupo5.entity.Seller;
+import com.bootcamp.socialmeligrupo5.exception.BadRequestException;
 import com.bootcamp.socialmeligrupo5.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.List;
 
 @Service
 public class PostService {
-
+    private final List<String> VALID_ORDERS = List.of("date_asc", "date_desc");
     private final PostRepository postRepository;
     private final SellerService sellerService;
     private final BuyerService buyerService;
@@ -36,7 +37,7 @@ public class PostService {
         this.postRepository.create(post);
     }
 
-    public SellerPostsResponseDTO findFollowedSellersLastTwoWeeksPosts(Long userId) {
+    public SellerPostsResponseDTO findFollowedSellersLastTwoWeeksPosts(Long userId, String order) {
         LocalDate twoWeeksAgo = LocalDate.now().minusWeeks(2);
         LocalDate today = LocalDate.now();
 
@@ -45,7 +46,21 @@ public class PostService {
 
         List<PostDTO> posts = postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today).stream().map(this::convertPostToPostDto).toList();
 
+        if (hasOrder(order)) {
+            return new SellerPostsResponseDTO(userId, posts.reversed());
+        }
         return new SellerPostsResponseDTO(userId, posts);
+    }
+
+    private boolean hasOrder(String order) {
+        if (order == null) {
+            return false;
+        }
+
+        if (!VALID_ORDERS.contains(order.toLowerCase())) {
+            throw new BadRequestException("O tipo da ordenção informada não é permitida!");
+        }
+        return order.equalsIgnoreCase("date_asc");
     }
 
     public PromoProductsCountResponseDTO countSellerPromoProducts(Long sellerId) {
