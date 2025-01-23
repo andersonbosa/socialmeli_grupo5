@@ -14,41 +14,41 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/products")
 public class PostController {
 
-	private final PostService postService;
+    private final PostService postService;
 
-	public PostController(PostService postService) {
-		this.postService = postService;
-	}
+    public PostController(PostService postService) {
+        this.postService = postService;
+    }
 
-	@PostMapping("/post")
-	public ResponseEntity<?> newPost(@Valid @RequestBody CreatePostRequestDTO postDto) {
-		postService.registerNewPost(postDto);
-		return ResponseEntity.ok().build();
-	}
+    @PostMapping("/post")
+    public ResponseEntity<?> newPost(@Valid @RequestBody CreatePostRequestDTO postDto) {
+        postService.registerNewPost(postDto);
+        return ResponseEntity.ok().build();
+    }
 
-	@GetMapping("/followed/{userId}/list")
-	public ResponseEntity<SellerPostsResponseDTO> findFollowedSellersRecentPosts(
-			@PathVariable @Id Long userId,
-			@RequestParam(required = false) String order
-	) {
-		return ResponseEntity.ok(postService.findFollowedSellersLastTwoWeeksPosts(userId, order));
-	}
+    @GetMapping("/followed/{userId}/list")
+    public ResponseEntity<SellerPostsResponseDTO> findFollowedSellersRecentPosts(
+        @PathVariable @Id Long userId,
+        @RequestParam(required = false) String order
+    ) {
+        return ResponseEntity.ok(postService.findFollowedSellersLastTwoWeeksPosts(userId, order));
+    }
 
-	@PostMapping("/promo-post")
-	public ResponseEntity<?> newPromoPost(@Valid @RequestBody CreatePromoPostRequestDTO dto) {
-		postService.registerNewPromoPost(dto);
-		return ResponseEntity.ok().build();
-	}
+    @PostMapping("/promo-post")
+    public ResponseEntity<?> newPromoPost(@Valid @RequestBody CreatePromoPostRequestDTO dto) {
+        postService.registerNewPromoPost(dto);
+        return ResponseEntity.ok().build();
+    }
 
-	@GetMapping("/promo-post/count")
-	public ResponseEntity<PromoProductsCountResponseDTO> getPromoPostCount(@RequestParam(name = "user_id") @Id Long userId) {
-		PromoProductsCountResponseDTO dto = this.postService.countSellerPromoProducts(userId);
-		return ResponseEntity.ok(dto);
-	}
+    @GetMapping("/promo-post/count")
+    public ResponseEntity<PromoProductsCountResponseDTO> getPromoPostCount(@RequestParam(name = "user_id") @Id Long userId) {
+        PromoProductsCountResponseDTO dto = this.postService.countSellerPromoProducts(userId);
+        return ResponseEntity.ok(dto);
+    }
 
-	@GetMapping("/promo-post/list")
-	public ResponseEntity<PromoProductsListResponseDTO> getPromoPostBySellerId(@RequestParam(name = "user_id") @Id Long userId) {
-		PromoProductsListResponseDTO dto = postService.promoPostBySellerId(userId);
-		return ResponseEntity.ok(dto);
-	}
+    @GetMapping("/promo-post/list")
+    public ResponseEntity<PromoProductsListResponseDTO> getPromoPostBySellerId(@RequestParam(name = "user_id") @Id Long userId) {
+        PromoProductsListResponseDTO dto = postService.promoPostBySellerId(userId);
+        return ResponseEntity.ok(dto);
+    }
 }
