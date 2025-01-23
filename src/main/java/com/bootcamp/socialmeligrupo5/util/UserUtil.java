@@ -25,10 +25,6 @@ public class UserUtil {
     }
 
     private static void validateOrder(String order) {
-        if (order.isBlank()) {
-            throw new BadRequestException("Necessário informar o tipo de ordenação desejada!");
-        }
-
         if (!VALID_ORDERS.contains(order.toLowerCase())) {
             throw new BadRequestException("O tipo da ordenção informada não é permitida!");
         }
