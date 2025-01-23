@@ -66,6 +66,7 @@ public class InMemoryPostRepository implements PostRepository {
         }
     }
 
+    @Override
     public List<Post> findAll() {
         return posts;
     }
