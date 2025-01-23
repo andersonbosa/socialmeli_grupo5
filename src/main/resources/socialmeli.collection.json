@@ -1,0 +1,1734 @@
+{
+	"info": {
+		"_postman_id": "9ebadffc-7395-43e4-bc34-229385947900",
+		"name": "SocialMeli API Documentation Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40985839",
+		"_collection_link": "https://grupo-5-wave10.postman.co/workspace/socialmeli-grupo5~842a4443-047c-4ee7-a5b4-6154ea36f543/collection/40985839-9ebadffc-7395-43e4-bc34-229385947900?action=share&source=collection_link&creator=40985839"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create Post (US0005)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1,\n    \"date\": \"10-01-2025\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Mouse D3\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Office\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": 11\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/products/post",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"products",
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": 1,\n    \"date\": \"21-01-2025\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Cadeira D3\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Office\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": 11\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/products/post",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:40:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": 1000,\n    \"date\": \"21-01-2025\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Cadeira D3\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Office\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": -1\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/products/post",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"post"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 18:10:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"price deve ser maior que 0\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": 1000,\n    \"date\": \"21-01-2025\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Cadeira D3\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Office\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": 11\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/products/post",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"post"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:40:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"O vendedor enviado não foi localizado!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Promo Post (US0010)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 4,\n    \"date\": \"20-01-2025\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Cadeira Gamer\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Racer\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": 1500.50,\n    \"hasPromo\": true,\n    \"discount\": 0.1\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/products/promo-post",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"products",
+								"promo-post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": 1,\n    \"date\": \"29-04-2021\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Cadeira Gamer\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Racer\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": 1500.50,\n    \"hasPromo\": true,\n    \"discount\": 1\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:40:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": 1,\n    \"date\": \"20-01-2025\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Cadeira Gamer\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Racer\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": 1500.50,\n    \"hasPromo\": true,\n    \"discount\": 2\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 17:52:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"discount deve ser menor que ou igual à 1\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": 1000,\n    \"date\": \"29-04-2021\",\n    \"product\": {\n        \"productId\": 1,\n        \"productName\": \"Cadeira Gamer\",\n        \"type\": \"Gamer\",\n        \"brand\": \"Racer\",\n        \"color\": \"Red & Black\",\n        \"notes\": \"Special Edition\"\n    },\n    \"category\": 100,\n    \"price\": 1500.50,\n    \"hasPromo\": true,\n    \"discount\": 1\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:40:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"O vendedor enviado não foi localizado!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List Seller Recent Posts (US0006)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields - userId and posts\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData).to.have.property('userId');",
+									"    pm.expect(responseData).to.have.property('posts');",
+									"});",
+									"",
+									"",
+									"pm.test(\"UserId is a non-negative integer\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.userId).to.exist.and.to.be.a('number');",
+									"    pm.expect(responseData.userId).to.be.at.least(0, \"UserId should be a non-negative integer\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Posts array is present and not empty\", function () {",
+									"    const responseData = pm.response.json();",
+									"",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.posts).to.exist.and.to.be.an('array').that.is.not.empty;",
+									"});",
+									"",
+									"",
+									"pm.test(\"Content-Type header is application/json\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/products/followed/2/list",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"products",
+								"followed",
+								"2",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/followed/2/list",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"followed",
+										"2",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 18:11:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 2,\n    \"posts\": [\n        {\n            \"userId\": 1,\n            \"postId\": 101,\n            \"date\": \"2025-01-21\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Cadeira D3\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Office\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 11\n        },\n        {\n            \"userId\": 3,\n            \"postId\": 102,\n            \"date\": \"2025-01-10\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Mouse D3\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Office\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 11\n        },\n        {\n            \"userId\": 4,\n            \"postId\": 103,\n            \"date\": \"2025-01-10\",\n            \"product\": {\n                \"productId\": 123,\n                \"productName\": \"monitor\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Office\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 11\n        }\n    ]\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/followed/-1/list",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"followed",
+										"-1",
+										"list"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:46:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"findFollowedSellersRecentPosts.userId: O Id deve ser um valor numerico positivo\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/followed/1000/list",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"followed",
+										"1000",
+										"list"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:47:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"O comprador enviado não foi localizado!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List Seller Recent Posts With Order (US0009)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Content type is application/json\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"UserId field must exist and be a number\", function () {",
+									"  const responseData = pm.response.json();",
+									"  ",
+									"  pm.expect(responseData).to.be.an('object');",
+									"  pm.expect(responseData.userId).to.exist.and.to.be.a('number');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Posts array is present and empty\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.posts).to.exist.and.to.be.an('array').that.is.empty;",
+									"});",
+									"",
+									"",
+									"pm.test(\"Ensure that the order of the posts is in ascending order by date\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.posts).to.be.an('array');",
+									"    ",
+									"    if (responseData.posts.length > 1) {",
+									"        let sorted = true;",
+									"        responseData.posts.forEach((post, index, array) => {",
+									"            if (index < array.length - 1 && post.date > array[index + 1].date) {",
+									"                sorted = false;",
+									"            }",
+									"        });",
+									"        pm.expect(sorted).to.be.true;",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/products/followed/1/list?order=date_asc",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"products",
+								"followed",
+								"1",
+								"list"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "date_asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/followed/2/list?order=date_asc",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"followed",
+										"2",
+										"list"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "date_asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:58:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 2,\n    \"posts\": [\n        {\n            \"userId\": 1,\n            \"postId\": 68,\n            \"date\": \"2025-01-13\",\n            \"product\": {\n                \"productId\": 68,\n                \"productName\": \"Coolpad Cool Play 6\",\n                \"type\": \"Android 7.1.1, Journey UI\",\n                \"brand\": \"Coolpad\",\n                \"color\": \"Indigo\",\n                \"notes\": \"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\"\n            },\n            \"category\": 9,\n            \"price\": 840.65\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 80,\n            \"date\": \"2025-01-15\",\n            \"product\": {\n                \"productId\": 80,\n                \"productName\": \"LG GB210\",\n                \"type\": \"Feature phone\",\n                \"brand\": \"LG\",\n                \"color\": \"Yellow\",\n                \"notes\": \"Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\"\n            },\n            \"category\": 2,\n            \"price\": 265.65\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 104,\n            \"date\": \"2025-01-20\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Cadeira Gamer\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Racer\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 1500.5\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 103,\n            \"date\": \"2025-01-20\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Cadeira Gamer\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Racer\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 1500.5\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 109,\n            \"date\": \"2025-01-21\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Cadeira D3\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Office\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 11\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 107,\n            \"date\": \"2025-01-21\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Cadeira D3\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Office\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 11\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 106,\n            \"date\": \"2025-01-21\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Cadeira D3\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Office\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 11\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 105,\n            \"date\": \"2025-01-21\",\n            \"product\": {\n                \"productId\": 1,\n                \"productName\": \"Cadeira D3\",\n                \"type\": \"Gamer\",\n                \"brand\": \"Office\",\n                \"color\": \"Red & Black\",\n                \"notes\": \"Special Edition\"\n            },\n            \"category\": 100,\n            \"price\": 11\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 10,\n            \"date\": \"2025-01-22\",\n            \"product\": {\n                \"productId\": 10,\n                \"productName\": \"Nokia 222 Dual SIM\",\n                \"type\": \"Feature phone\",\n                \"brand\": \"Nokia\",\n                \"color\": \"Crimson\",\n                \"notes\": \"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\"\n            },\n            \"category\": 6,\n            \"price\": 382.56\n        }\n    ]\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/followed/-2/list?order=date_asc",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"followed",
+										"-2",
+										"list"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "date_asc"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:58:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"findFollowedSellersRecentPosts.userId: O Id deve ser um valor numerico positivo\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/followed/2000/list?order=date_asc",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"followed",
+										"2000",
+										"list"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "date_asc"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 13:59:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"O comprador enviado não foi localizado!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Count Seller Promo Posts (US0011)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Content type is application/json\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData).to.have.property('userId');",
+									"    pm.expect(responseData).to.have.property('userName');",
+									"    pm.expect(responseData).to.have.property('promoProductsCount');",
+									"});",
+									"",
+									"",
+									"pm.test(\"User ID is a non-negative integer\", function () {",
+									"  const responseData = pm.response.json();",
+									"  ",
+									"  pm.expect(responseData.userId).to.be.a('number').and.to.be.at.least(0, \"User ID should be a non-negative integer\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Promo products count is a non-negative integer\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.promoProductsCount).to.be.a('number');",
+									"    pm.expect(responseData.promoProductsCount).to.be.at.least(0);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"",
+									"const baseUrl = 'http://localhost:8080'",
+									"const url = `${baseUrl}/products/promo-post`",
+									"",
+									"const userIdOnQueryParam = Number(  pm.request.url.query.get(\"user_id\") )",
+									"const payloads = [",
+									"    {",
+									"        \"userId\": userIdOnQueryParam,",
+									"        \"date\": \"20-01-2025\",",
+									"        \"product\": {",
+									"            \"productId\": 1,",
+									"            \"productName\": \"Cadeira Gamer\",",
+									"            \"type\": \"Gamer\",",
+									"            \"brand\": \"Racer\",",
+									"            \"color\": \"Red & Black\",",
+									"            \"notes\": \"Special Edition\"",
+									"        },",
+									"        \"category\": 100,",
+									"        \"price\": 1500.5,",
+									"        \"hasPromo\": true,",
+									"        \"discount\": 0.1",
+									"    },",
+									"    {",
+									"        \"userId\": userIdOnQueryParam,",
+									"        \"date\": \"22-01-2025\",",
+									"        \"product\": {",
+									"            \"productId\": 2,",
+									"            \"productName\": \"Monitor UltraWide\",",
+									"            \"type\": \"Periférico\",",
+									"            \"brand\": \"LG\",",
+									"            \"color\": \"Black\",",
+									"            \"notes\": \"HDR 4K\"",
+									"        },",
+									"        \"category\": 200,",
+									"        \"price\": 2500.0,",
+									"        \"hasPromo\": true,",
+									"        \"discount\": 0.3",
+									"    },",
+									"    {",
+									"        \"userId\": userIdOnQueryParam,",
+									"        \"date\": \"15-01-2025\",",
+									"        \"product\": {",
+									"            \"productId\": 3,",
+									"            \"productName\": \"Teclado Mecânico\",",
+									"            \"type\": \"Periférico\",",
+									"            \"brand\": \"HyperX\",",
+									"            \"color\": \"White\",",
+									"            \"notes\": \"Switch Red\"",
+									"        },",
+									"        \"category\": 300,",
+									"        \"price\": 600.75,",
+									"        \"hasPromo\": true,",
+									"        \"discount\": 0.15",
+									"    },",
+									"    {",
+									"        \"userId\": userIdOnQueryParam,",
+									"        \"date\": \"01-01-2025\",",
+									"        \"product\": {",
+									"            \"productId\": 4,",
+									"            \"productName\": \"Mouse Sem Fio\",",
+									"            \"type\": \"Acessório\",",
+									"            \"brand\": \"Logitech\",",
+									"            \"color\": \"Blue\",",
+									"            \"notes\": \"Modelo G Pro\"",
+									"        },",
+									"        \"category\": 400,",
+									"        \"price\": 350.99,",
+									"        \"hasPromo\": true,",
+									"        \"discount\": 0.1",
+									"    },",
+									"    {",
+									"        \"userId\": userIdOnQueryParam,",
+									"        \"date\": \"10-01-2025\",",
+									"        \"product\": {",
+									"            \"productId\": 5,",
+									"            \"productName\": \"Headset Gamer\",",
+									"            \"type\": \"Áudio\",",
+									"            \"brand\": \"Corsair\",",
+									"            \"color\": \"Black & Red\",",
+									"            \"notes\": \"Surround 7.1\"",
+									"        },",
+									"        \"category\": 500,",
+									"        \"price\": 800.0,",
+									"        \"hasPromo\": true,",
+									"        \"discount\": 0.2",
+									"    }",
+									"];",
+									"",
+									"console.log('DEBUG', url, payloads)",
+									"",
+									"for (let i = 0; i <= 5; i++) {",
+									"    pm.sendRequest({",
+									"        url,",
+									"        method: 'POST',",
+									"        header: {",
+									"            'Content-Type': 'application/json'",
+									"        },",
+									"        body: JSON.stringify(payloads[i])",
+									"    });",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/products/promo-post/count?user_id=4",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"products",
+								"promo-post",
+								"count"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/count?user_id=1",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"count"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 17:36:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 1,\n    \"userName\": \"Ana Clara Ribeiro\",\n    \"promoProductsCount\": 3\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/count?user_id=100",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"count"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 17:36:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"O vendedor enviado não foi localizado!\"\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/count?user_id=",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"count"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 17:37:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Required request parameter 'user_id' for method parameter type Long is present but converted to null\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List Promo Posts by SellerId (US0012)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/products/promo-post/list?user_id=-1",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"products",
+								"promo-post",
+								"list"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/list?user_id=1",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"list"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 20:58:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 1,\n    \"userName\": \"Ana Clara Ribeiro\",\n    \"posts\": [\n        {\n            \"userId\": 1,\n            \"postId\": 10,\n            \"date\": \"2025-01-22\",\n            \"product\": {\n                \"productId\": 10,\n                \"productName\": \"Nokia 222 Dual SIM\",\n                \"type\": \"Feature phone\",\n                \"brand\": \"Nokia\",\n                \"color\": \"Crimson\",\n                \"notes\": \"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\"\n            },\n            \"category\": 6,\n            \"price\": 382.56,\n            \"discount\": 0.75,\n            \"hasPromo\": true\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 24,\n            \"date\": \"2025-01-07\",\n            \"product\": {\n                \"productId\": 24,\n                \"productName\": \"LG KT770\",\n                \"type\": \"Symbian OS 9.3 Series60 rel. 3.2.3\",\n                \"brand\": \"LG\",\n                \"color\": \"Maroon\",\n                \"notes\": \"Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\"\n            },\n            \"category\": 3,\n            \"price\": 633.25,\n            \"discount\": 0.03,\n            \"hasPromo\": true\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 68,\n            \"date\": \"2025-01-13\",\n            \"product\": {\n                \"productId\": 68,\n                \"productName\": \"Coolpad Cool Play 6\",\n                \"type\": \"Android 7.1.1, Journey UI\",\n                \"brand\": \"Coolpad\",\n                \"color\": \"Indigo\",\n                \"notes\": \"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\"\n            },\n            \"category\": 9,\n            \"price\": 840.65,\n            \"discount\": 0.25,\n            \"hasPromo\": true\n        }\n    ]\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/list?user_id=-1",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"list"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "-1"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 21:01:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"getPromoPostBySellerId.userId: O Id deve ser um valor numerico positivo\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/list?user_id=60",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"list"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "60"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 21:02:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"O vendedor enviado não foi localizado!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Follow Seller (US0001)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Count Seller Followers (US0002)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "List Seller Followers (US0003)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "List User Followed Sellers (US0004)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "List Seller Followers With Order (US0008)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "List User Followed Sellers With Order (US0008)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Unfollow Seller (US0007)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	]
+}
