@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "b1b4c522-34e9-4688-be9a-14843247ae5c",
-		"name": "SocialMeli API Documentation",
+		"_postman_id": "9ebadffc-7395-43e4-bc34-229385947900",
+		"name": "SocialMeli API Documentation Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40985839",
-		"_collection_link": "https://grupo-5-wave10.postman.co/workspace/socialmeli-grupo5~842a4443-047c-4ee7-a5b4-6154ea36f543/collection/40678199-b1b4c522-34e9-4688-be9a-14843247ae5c?action=share&source=collection_link&creator=40985839"
+		"_collection_link": "https://grupo-5-wave10.postman.co/workspace/socialmeli-grupo5~842a4443-047c-4ee7-a5b4-6154ea36f543/collection/40985839-9ebadffc-7395-43e4-bc34-229385947900?action=share&source=collection_link&creator=40985839"
 	},
 	"item": [
 		{
@@ -86,7 +86,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "400",
@@ -293,7 +293,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "400",
@@ -1176,7 +1176,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{apiUrl}}/products/promo-post/list?user_id=1",
+							"raw": "{{apiUrl}}/products/promo-post/list?user_id=-1",
 							"host": [
 								"{{apiUrl}}"
 							],
@@ -1188,12 +1188,162 @@
 							"query": [
 								{
 									"key": "user_id",
-									"value": "1"
+									"value": "-1"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/list?user_id=1",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"list"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 20:58:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 1,\n    \"userName\": \"Ana Clara Ribeiro\",\n    \"posts\": [\n        {\n            \"userId\": 1,\n            \"postId\": 10,\n            \"date\": \"2025-01-22\",\n            \"product\": {\n                \"productId\": 10,\n                \"productName\": \"Nokia 222 Dual SIM\",\n                \"type\": \"Feature phone\",\n                \"brand\": \"Nokia\",\n                \"color\": \"Crimson\",\n                \"notes\": \"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\"\n            },\n            \"category\": 6,\n            \"price\": 382.56,\n            \"discount\": 0.75,\n            \"hasPromo\": true\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 24,\n            \"date\": \"2025-01-07\",\n            \"product\": {\n                \"productId\": 24,\n                \"productName\": \"LG KT770\",\n                \"type\": \"Symbian OS 9.3 Series60 rel. 3.2.3\",\n                \"brand\": \"LG\",\n                \"color\": \"Maroon\",\n                \"notes\": \"Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\"\n            },\n            \"category\": 3,\n            \"price\": 633.25,\n            \"discount\": 0.03,\n            \"hasPromo\": true\n        },\n        {\n            \"userId\": 1,\n            \"postId\": 68,\n            \"date\": \"2025-01-13\",\n            \"product\": {\n                \"productId\": 68,\n                \"productName\": \"Coolpad Cool Play 6\",\n                \"type\": \"Android 7.1.1, Journey UI\",\n                \"brand\": \"Coolpad\",\n                \"color\": \"Indigo\",\n                \"notes\": \"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\"\n            },\n            \"category\": 9,\n            \"price\": 840.65,\n            \"discount\": 0.25,\n            \"hasPromo\": true\n        }\n    ]\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/list?user_id=-1",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"list"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "-1"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 21:01:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"getPromoPostBySellerId.userId: O Id deve ser um valor numerico positivo\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/products/promo-post/list?user_id=60",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"products",
+										"promo-post",
+										"list"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "60"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jan 2025 21:02:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"O vendedor enviado não foi localizado!\"\n}"
+						}
+					]
 				}
 			]
 		},
@@ -1204,17 +1354,23 @@
 					"name": "Follow Seller (US0001)",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": [
 						{
 							"name": "200",
 							"originalRequest": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1222,10 +1378,13 @@
 							"name": "400",
 							"originalRequest": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1233,10 +1392,13 @@
 							"name": "404",
 							"originalRequest": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
@@ -1246,17 +1408,23 @@
 					"name": "Count Seller Followers (US0002)",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": [
 						{
 							"name": "200",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1264,10 +1432,13 @@
 							"name": "400",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1275,10 +1446,13 @@
 							"name": "404",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
@@ -1288,17 +1462,23 @@
 					"name": "List Seller Followers (US0003)",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": [
 						{
 							"name": "200",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1306,10 +1486,13 @@
 							"name": "400",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1317,10 +1500,13 @@
 							"name": "404",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
@@ -1330,17 +1516,23 @@
 					"name": "List User Followed Sellers (US0004)",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": [
 						{
 							"name": "200",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1348,10 +1540,13 @@
 							"name": "400",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1359,10 +1554,13 @@
 							"name": "404",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
@@ -1372,17 +1570,23 @@
 					"name": "List Seller Followers With Order (US0008)",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": [
 						{
 							"name": "200",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1390,10 +1594,13 @@
 							"name": "400",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1401,10 +1608,13 @@
 							"name": "404",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
@@ -1414,17 +1624,23 @@
 					"name": "List User Followed Sellers With Order (US0008)",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": [
 						{
 							"name": "200",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1432,10 +1648,13 @@
 							"name": "400",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1443,10 +1662,13 @@
 							"name": "404",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
@@ -1456,17 +1678,23 @@
 					"name": "Unfollow Seller (US0007)",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": [
 						{
 							"name": "200",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1474,10 +1702,13 @@
 							"name": "404",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						},
@@ -1485,10 +1716,13 @@
 							"name": "400",
 							"originalRequest": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
-							"_postman_previewlanguage": "",
-							"header": "",
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
