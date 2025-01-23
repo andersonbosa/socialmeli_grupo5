@@ -46,16 +46,16 @@ public class PostService {
 
         List<PostDTO> posts = postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today).stream().map(this::convertPostToPostDto).toList();
 
-        if (order != null) {
-            validateOrder(order);
-            if (order.equalsIgnoreCase("date_asc")) {
-                return new SellerPostsResponseDTO(userId, posts.reversed());
-            }
+        if (hasOrder(order)) {
+            return new SellerPostsResponseDTO(userId, posts.reversed());
         }
         return new SellerPostsResponseDTO(userId, posts);
     }
 
-    private void validateOrder(String order) {
+    private boolean hasOrder(String order) {
+        if (order == null) {
+            return false;
+        }
         if (order.isBlank()) {
             throw new BadRequestException("Necessário informar o tipo de ordenação desejada!");
         }
@@ -63,6 +63,7 @@ public class PostService {
         if (!VALID_ORDERS.contains(order.toLowerCase())) {
             throw new BadRequestException("O tipo da ordenção informada não é permitida!");
         }
+        return order.equalsIgnoreCase("date_asc");
     }
 
     public PromoProductsCountResponseDTO countSellerPromoProducts(Long sellerId) {
