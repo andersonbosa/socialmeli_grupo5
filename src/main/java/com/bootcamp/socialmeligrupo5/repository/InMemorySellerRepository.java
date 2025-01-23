@@ -22,7 +22,7 @@ public class InMemorySellerRepository implements SellerRepository {
     @Override
     public Seller findById(Long id) {
         return sellers.stream().filter(seller -> seller.getId().equals(id)).findFirst()
-                .orElse(null);
+            .orElse(null);
     }
 
     @Override
@@ -39,8 +39,8 @@ public class InMemorySellerRepository implements SellerRepository {
 
             file = ResourceUtils.getFile("src/main/resources/users_seller_50.json");
             sellersJson = objectMapper.readValue(
-                    file, new TypeReference<List<Seller>>() {
-                    }
+                file, new TypeReference<List<Seller>>() {
+                }
             );
 
             sellers = sellersJson;
