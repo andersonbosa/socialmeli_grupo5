@@ -18,7 +18,10 @@ public class HandlerException {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exceptionDTO);
     }
 
-    @ExceptionHandler({BadRequestException.class, ConstraintViolationException.class, MethodArgumentTypeMismatchException.class})
+    @ExceptionHandler(
+            {BadRequestException.class, ConstraintViolationException.class,
+                    MethodArgumentTypeMismatchException.class}
+    )
     public ResponseEntity<ExceptionDTO> badRequest(Exception ex) {
         ExceptionDTO exceptionDTO = new ExceptionDTO(ex.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionDTO);
@@ -32,7 +35,7 @@ public class HandlerException {
         FieldError firstError = (FieldError) ex.getBindingResult().getAllErrors().getFirst();
         String errorMessage = firstError.getDefaultMessage();
         String fieldName = firstError.getField();
-        ExceptionDTO exceptionDTO = new ExceptionDTO(fieldName + " "+ errorMessage);
+        ExceptionDTO exceptionDTO = new ExceptionDTO(fieldName + " " + errorMessage);
 
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionDTO);
     }

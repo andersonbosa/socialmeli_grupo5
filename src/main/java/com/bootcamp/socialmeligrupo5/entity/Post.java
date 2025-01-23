@@ -19,7 +19,10 @@ public class Post {
     public Post() {
     }
 
-    public Post(Long id, LocalDate date, Integer category, Long sellerId, Product product, Double price, Double discount, Boolean hasPromo) {
+    public Post(
+            Long id, LocalDate date, Integer category, Long sellerId, Product product, Double price,
+            Double discount, Boolean hasPromo
+    ) {
         this.id = id;
         this.date = date;
         this.category = category;
@@ -30,16 +33,21 @@ public class Post {
         this.hasPromo = hasPromo;
     }
 
-    public Post(Long id, LocalDate date, Integer category, Long sellerId, Product product, Double price) {
-		this.id = id;
-		this.date = date;
-		this.category = category;
-		this.sellerId = sellerId;
-		this.product = product;
-		this.price = price;
-	}
+    public Post(
+            Long id, LocalDate date, Integer category, Long sellerId, Product product,
+            Double price
+    ) {
+        this.id = id;
+        this.date = date;
+        this.category = category;
+        this.sellerId = sellerId;
+        this.product = product;
+        this.price = price;
+        this.discount = 0.0;
+        this.hasPromo = false;
+    }
 
-	public Integer getCategory() {
+    public Integer getCategory() {
         return category;
     }
 

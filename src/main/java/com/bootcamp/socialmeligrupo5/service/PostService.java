@@ -19,7 +19,8 @@ public class PostService {
     private final SellerService sellerService;
     private final BuyerService buyerService;
 
-    public PostService(PostRepository postRepository, SellerService sellerService, BuyerService buyerService){
+    public PostService(
+            PostRepository postRepository, SellerService sellerService, BuyerService buyerService) {
         this.postRepository = postRepository;
         this.sellerService = sellerService;
         this.buyerService = buyerService;
@@ -28,6 +29,7 @@ public class PostService {
     public void registerNewPost(CreatePostRequestDTO postDto) {
         Post post = convertPostDtoToPost(postDto);
         sellerService.findSeller(post.getSellerId());
+
         this.postRepository.create(post);
     }
 
@@ -42,9 +44,12 @@ public class PostService {
         LocalDate today = LocalDate.now();
 
         BuyerFollowingResponseDTO buyerFollowing = buyerService.buyerFollowing(userId, null);
-        List<Long> sellerIds = buyerFollowing.following().stream().map(UserResponseDTO::userId).toList();
+        List<Long> sellerIds =
+                buyerFollowing.following().stream().map(UserResponseDTO::userId).toList();
 
-        List<PostDTO> posts = postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today).stream().map(this::convertPostToPostDto).toList();
+        List<PostDTO> posts =
+                postRepository.findBySellerIdBetweenDates(sellerIds, twoWeeksAgo, today).stream()
+                        .map(this::convertPostToPostDto).toList();
 
         if (hasOrder(order)) {
             return new SellerPostsResponseDTO(userId, posts.reversed());
@@ -58,7 +63,7 @@ public class PostService {
         }
 
         if (!VALID_ORDERS.contains(order.toLowerCase())) {
-            throw new BadRequestException("O tipo da ordenção informada não é permitida!");
+            throw new BadRequestException("O tipo da ordenação informada não é permitida!");
         }
         return order.equalsIgnoreCase("date_asc");
     }
@@ -66,15 +71,15 @@ public class PostService {
     public PromoProductsCountResponseDTO countSellerPromoProducts(Long sellerId) {
         Seller seller = sellerService.findSeller(sellerId);
         List<Post> posts = postRepository.findBySellerId(sellerId);
-        Long count = posts.stream().filter(Post::getHasPromo).count();
-        int promoProductsCount = Integer.parseInt(count.toString());
-        return new PromoProductsCountResponseDTO(sellerId, seller.getName(), promoProductsCount);
+        long count = posts.stream().filter(Post::getHasPromo).count();
+        return new PromoProductsCountResponseDTO(sellerId, seller.getName(), (int) count);
     }
 
     public PromoProductsListResponseDTO promoPostBySellerId(Long sellerId) {
         Seller seller = sellerService.findSeller(sellerId);
 
-        List<PromoPostDTO> promoPosts = postRepository.findPromoPostBySellerId(sellerId).stream().map(this::convertPostToPromoPostDto).toList();
+        List<PromoPostDTO> promoPosts = postRepository.findPromoPostBySellerId(sellerId).stream()
+                .map(this::convertPostToPromoPostDto).toList();
         return new PromoProductsListResponseDTO(sellerId, seller.getName(), promoPosts);
 
     }
@@ -83,11 +88,8 @@ public class PostService {
         Product product = convertProductDtoToProduct(p.product());
         return new Post(
                 (long) postRepository.findAll().size(),
-                LocalDate.parse(p.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
-                p.category(),
-                p.userId(),
-                product,
-                p.price()
+                LocalDate.parse(p.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")), p.category(),
+                p.userId(), product, p.price()
         );
     }
 
@@ -96,42 +98,36 @@ public class PostService {
         return new Post(
                 (long) postRepository.findAll().size(),
                 LocalDate.parse(dto.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
-                dto.category(),
-                dto.userId(),
-                product,
-                dto.price(),
-                dto.discount(),
-                dto.hasPromo()
+                dto.category(), dto.userId(), product, dto.price(), dto.discount(), dto.hasPromo()
         );
     }
 
     private PostDTO convertPostToPostDto(Post post) {
-        return new PostDTO(post.getSellerId(), post.getId(), post.getDate(), convertProductToProductDto(post.getProduct()), post.getCategory(), post.getPrice());
+        return new PostDTO(
+                post.getSellerId(), post.getId(), post.getDate(),
+                convertProductToProductDto(post.getProduct()), post.getCategory(), post.getPrice()
+        );
     }
 
     private PromoPostDTO convertPostToPromoPostDto(Post post) {
-        return new PromoPostDTO(post.getSellerId(), post.getId(), post.getDate(), convertProductToProductDto(post.getProduct()), post.getCategory(), post.getPrice(), post.getDiscount(), post.getHasPromo());
+        return new PromoPostDTO(
+                post.getSellerId(), post.getId(), post.getDate(),
+                convertProductToProductDto(post.getProduct()), post.getCategory(), post.getPrice(),
+                post.getDiscount(), post.getHasPromo()
+        );
     }
 
     private Product convertProductDtoToProduct(ProductDTO prodDto) {
         return new Product(
-                prodDto.brand(),
-                prodDto.color(),
-                prodDto.productId(),
-                prodDto.productName(),
-                prodDto.notes(),
-                prodDto.type()
+                prodDto.brand(), prodDto.color(), prodDto.productId(), prodDto.productName(),
+                prodDto.notes(), prodDto.type()
         );
     }
 
     private ProductDTO convertProductToProductDto(Product product) {
         return new ProductDTO(
-            product.getId(),
-            product.getName(),
-            product.getType(),
-            product.getBrand(),
-            product.getColor(),
-            product.getNotes()
+                product.getId(), product.getName(), product.getType(),
+                product.getBrand(), product.getColor(), product.getNotes()
         );
     }
 }
