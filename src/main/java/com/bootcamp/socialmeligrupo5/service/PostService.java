@@ -56,6 +56,14 @@ public class PostService {
         return new PromoProductsCountResponseDTO(sellerId, seller.getName(), promoProductsCount);
     }
 
+    public PromoProductsListResponseDTO promoPostBySellerId(Long sellerId) {
+        Seller seller = sellerService.findSeller(sellerId);
+
+        List<PromoPostDTO> promoPosts = postRepository.findPromoPostBySellerId(sellerId).stream().map(this::convertPostToPromoPostDto).toList();
+        return new PromoProductsListResponseDTO(sellerId, seller.getName(), promoPosts);
+
+    }
+
     private Post convertPostDtoToPost(CreatePostRequestDTO p) {
         Product product = convertProductDtoToProduct(p.product());
         return new Post(
@@ -84,6 +92,10 @@ public class PostService {
 
     private PostDTO convertPostToPostDto(Post post) {
         return new PostDTO(post.getSellerId(), post.getId(), post.getDate(), convertProductToProductDto(post.getProduct()), post.getCategory(), post.getPrice());
+    }
+
+    private PromoPostDTO convertPostToPromoPostDto(Post post) {
+        return new PromoPostDTO(post.getSellerId(), post.getId(), post.getDate(), convertProductToProductDto(post.getProduct()), post.getCategory(), post.getPrice(), post.getDiscount(), post.getHasPromo());
     }
 
     private Product convertProductDtoToProduct(ProductDTO prodDto) {

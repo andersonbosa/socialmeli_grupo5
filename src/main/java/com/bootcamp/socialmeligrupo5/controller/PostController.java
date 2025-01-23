@@ -41,4 +41,10 @@ public class PostController {
         PromoProductsCountResponseDTO dto = this.postService.countSellerPromoProducts(userId);
         return ResponseEntity.ok(dto);
     }
+
+    @GetMapping("/promo-post/list")
+    public ResponseEntity<PromoProductsListResponseDTO> getPromoPostBySellerId(@RequestParam(name = "user_id") Long userId) {
+        PromoProductsListResponseDTO dto = postService.promoPostBySellerId(userId);
+        return ResponseEntity.ok(dto);
+    }
 }
