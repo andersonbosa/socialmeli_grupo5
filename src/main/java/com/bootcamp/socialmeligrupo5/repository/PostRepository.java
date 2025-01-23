@@ -10,4 +10,5 @@ public interface PostRepository {
 		List<Post> findBySellerIdBetweenDates(List<Long> sellerIds, LocalDate start, LocalDate end);
     	List<Post> findBySellerId(Long sellerId);
     	List<Post> findAll();
+		List<Post> findPromoPostBySellerId(Long sellerId);
 }

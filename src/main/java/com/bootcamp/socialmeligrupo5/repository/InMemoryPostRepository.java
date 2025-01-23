@@ -41,6 +41,15 @@ public class InMemoryPostRepository implements PostRepository {
 				.toList();
 	}
 
+	@Override
+	public List<Post> findPromoPostBySellerId(Long sellerId) {
+		return posts
+				.stream()
+				.filter(post -> post.getSellerId().equals(sellerId))
+				.filter(post -> post.getHasPromo().equals(true))
+				.toList();
+	}
+
 	private void loadDatabase() {
 		try {
 			ObjectMapper objectMapper = new ObjectMapper();
