@@ -24,6 +24,7 @@ public class InMemoryPostRepository implements PostRepository {
 
     @Override
     public void create(Post post) {
+        post.setId((long) posts.size() + 1);
         posts.add(post);
     }
 

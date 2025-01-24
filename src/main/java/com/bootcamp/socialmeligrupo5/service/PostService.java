@@ -87,7 +87,6 @@ public class PostService {
     private Post convertPostDtoToPost(CreatePostRequestDTO p) {
         Product product = convertProductDtoToProduct(p.product());
         return new Post(
-            (long) postRepository.findAll().size(),
             LocalDate.parse(p.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")), p.category(),
             p.userId(), product, p.price()
         );
@@ -96,7 +95,6 @@ public class PostService {
     private Post convertPromoPostDtoToPost(CreatePromoPostRequestDTO dto) {
         Product product = convertProductDtoToProduct(dto.product());
         return new Post(
-            (long) postRepository.findAll().size(),
             LocalDate.parse(dto.date(), DateTimeFormatter.ofPattern("dd-MM-yyyy")),
             dto.category(), dto.userId(), product, dto.price(), dto.discount(), dto.hasPromo()
         );
