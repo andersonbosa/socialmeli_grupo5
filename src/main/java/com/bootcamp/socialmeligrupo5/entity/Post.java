@@ -20,10 +20,9 @@ public class Post {
     }
 
     public Post(
-        Long id, LocalDate date, Integer category, Long sellerId, Product product, Double price,
+        LocalDate date, Integer category, Long sellerId, Product product, Double price,
         Double discount, Boolean hasPromo
     ) {
-        this.id = id;
         this.date = date;
         this.category = category;
         this.sellerId = sellerId;
@@ -34,10 +33,9 @@ public class Post {
     }
 
     public Post(
-        Long id, LocalDate date, Integer category, Long sellerId, Product product,
+        LocalDate date, Integer category, Long sellerId, Product product,
         Double price
     ) {
-        this.id = id;
         this.date = date;
         this.category = category;
         this.sellerId = sellerId;
