@@ -1,5 +1,7 @@
 # SOCIALMELI
 
+## WHAT
+
 A REST API developed in Spring Boot during the Bootcamp. Features:
 
 * Perform the "Follow" action on a specific user.
@@ -18,7 +20,11 @@ Furthermore, as a good user experience is desired regarding the presentation of 
 * Alphabetical Ascending and Descending.
 * Date Ascending and Descending.
 
-### AUTHORS
+## API DOCUMENTATION
+
+* [Postman Collection](src/main/resources/socialmeli.collection.json)
+
+## AUTHORS
 
 * Anderson Bosa
 * Bruna Golcalves
@@ -27,4 +33,4 @@ Furthermore, as a good user experience is desired regarding the presentation of 
 * Katharine Viana
 * Kevin Bernal
 
-### LICENSE
+## LICENSE
